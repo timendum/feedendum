@@ -1,2 +1,3 @@
 # feedendum
-A python library to parse and generate RSS or atom feeds
+A python library to parse and generate RSS or atom feeds.
+

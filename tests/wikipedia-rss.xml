@@ -1,0 +1,683 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>RSS - Revision history</title>
+		<link>https://en.wikipedia.org/w/index.php?title=RSS&amp;action=history</link>
+		<description>Revision history for this page on the wiki</description>
+		<language>en</language>
+		<generator>MediaWiki 1.35.0-wmf.14</generator>
+		<lastBuildDate>Tue, 14 Jan 2020 11:56:21 GMT</lastBuildDate>
+		<item>
+			<title>Calbow: /* Current usage */ rewording</title>
+			<link>https://en.wikipedia.org/w/index.php?title=RSS&amp;diff=924206591&amp;oldid=prev</link>
+			<guid isPermaLink="false">https://en.wikipedia.org/w/index.php?title=RSS&amp;diff=924206591&amp;oldid=prev</guid>
+			<description>&lt;p&gt;&lt;span dir=&quot;auto&quot;&gt;&lt;span class=&quot;autocomment&quot;&gt;Current usage: &lt;/span&gt; rewording&lt;/span&gt;&lt;/p&gt;
+&lt;table class=&quot;diff diff-contentalign-left&quot; data-mw=&quot;interface&quot;&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;tr class=&quot;diff-title&quot; lang=&quot;en&quot;&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;← Previous revision&lt;/td&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;Revision as of 13:31, 2 November 2019&lt;/td&gt;
+				&lt;/tr&gt;&lt;tr&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 239:&lt;/td&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 239:&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;== Current usage ==&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;== Current usage ==&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;−&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #ffe49c; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;Several major sites such as [[Facebook]] and [[Twitter]] previously offered RSS feeds but have reduced or removed support. Additionally, widely used readers such as [[Shiira]], [[FeedDemon]], and [[Google Reader]] have been discontinued having cited declining popularity in RSS.&amp;lt;ref name=&quot;ClosureAnnouncement&quot;&amp;gt;{{cite web|url=http://googleblog.blogspot.com/2013/03/a-second-spring-of-cleaning.html|title=A second spring of cleaning|publisher=googleblog.blogspot.com|first=Urs|last=Hölzle|accessdate=March 14, 2013}}&amp;lt;/ref&amp;gt; RSS support was removed in [[OS X Mountain Lion]]'s versions of [[Mail (OS X)|Mail]] and [[Safari (web browser)|Safari]], although the features were partially restored in Safari 8.&amp;lt;ref name=&quot;RSS&quot;&amp;gt;{{cite web | url=http://www.macworld.com/article/165465/2012/02/mountain_lion_hands_on_with_mail.html | title=Mountain Lion: Hands on with Mail | publisher=[[Mac Publishing]] |work=[[Macworld]] | date=February 19, 2012 | accessdate=February 23, 2012 | last=Frakes |first=Dan}}&amp;lt;/ref&amp;gt;&amp;lt;ref&amp;gt;{{cite web | url=http://osxdaily.com/2014/11/03/subscribe-rss-feeds-safari-os-x/ | title=Subscribe to RSS Feeds in Safari for OS X Yosemite | publisher=OSX Daily | accessdate=January 24, 2015}}&amp;lt;/ref&amp;gt; [[Mozilla]] removed RSS support from [[Mozilla Firefox]] version 64.0, joining [[Google Chrome]] and [[Microsoft Edge]] which do not include RSS support, thus &lt;del class=&quot;diffchange diffchange-inline&quot;&gt;leaves&lt;/del&gt; [[Internet Explorer]] the last major browser to include RSS support by default.&amp;lt;ref&amp;gt;{{cite web |last1=Cimpanu |first1=Catalin |title=Mozilla to Remove Support for Built-In Feed Reader From Firefox |url=https://www.bleepingcomputer.com/news/software/mozilla-to-remove-support-for-built-in-feed-reader-from-firefox/ |website=BleepingComputer |date=July 26, 2018 |accessdate=July 26, 2018 |language=en-us}}&amp;lt;/ref&amp;gt;&amp;lt;ref&amp;gt;{{cite web |title=Firefox 64.0, See All New Features, Updates and Fixes |url=https://www.mozilla.org/en-US/firefox/64.0/releasenotes/ |website=Mozilla |date=December 11, 2018 |accessdate=December 12, 2018 |language=en-us}}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;+&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;Several major sites such as [[Facebook]] and [[Twitter]] previously offered RSS feeds but have reduced or removed support. Additionally, widely used readers such as [[Shiira]], [[FeedDemon]], and [[Google Reader]] have been discontinued having cited declining popularity in RSS.&amp;lt;ref name=&quot;ClosureAnnouncement&quot;&amp;gt;{{cite web|url=http://googleblog.blogspot.com/2013/03/a-second-spring-of-cleaning.html|title=A second spring of cleaning|publisher=googleblog.blogspot.com|first=Urs|last=Hölzle|accessdate=March 14, 2013}}&amp;lt;/ref&amp;gt; RSS support was removed in [[OS X Mountain Lion]]'s versions of [[Mail (OS X)|Mail]] and [[Safari (web browser)|Safari]], although the features were partially restored in Safari 8.&amp;lt;ref name=&quot;RSS&quot;&amp;gt;{{cite web | url=http://www.macworld.com/article/165465/2012/02/mountain_lion_hands_on_with_mail.html | title=Mountain Lion: Hands on with Mail | publisher=[[Mac Publishing]] |work=[[Macworld]] | date=February 19, 2012 | accessdate=February 23, 2012 | last=Frakes |first=Dan}}&amp;lt;/ref&amp;gt;&amp;lt;ref&amp;gt;{{cite web | url=http://osxdaily.com/2014/11/03/subscribe-rss-feeds-safari-os-x/ | title=Subscribe to RSS Feeds in Safari for OS X Yosemite | publisher=OSX Daily | accessdate=January 24, 2015}}&amp;lt;/ref&amp;gt; [[Mozilla]] removed RSS support from [[Mozilla Firefox]] version 64.0, joining [[Google Chrome]] and [[Microsoft Edge]] which do not include RSS support, thus &lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;leaving&lt;/ins&gt; [[Internet Explorer]]&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt; as&lt;/ins&gt; the last major browser to include RSS support by default.&amp;lt;ref&amp;gt;{{cite web |last1=Cimpanu |first1=Catalin |title=Mozilla to Remove Support for Built-In Feed Reader From Firefox |url=https://www.bleepingcomputer.com/news/software/mozilla-to-remove-support-for-built-in-feed-reader-from-firefox/ |website=BleepingComputer |date=July 26, 2018 |accessdate=July 26, 2018 |language=en-us}}&amp;lt;/ref&amp;gt;&amp;lt;ref&amp;gt;{{cite web |title=Firefox 64.0, See All New Features, Updates and Fixes |url=https://www.mozilla.org/en-US/firefox/64.0/releasenotes/ |website=Mozilla |date=December 11, 2018 |accessdate=December 12, 2018 |language=en-us}}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;== See also ==&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;== See also ==&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;!-- diff cache key enwiki:diff:wikidiff2:1.12:old-917427752:rev-924206591:1.10.0 --&gt;
+&lt;/table&gt;</description>
+			<pubDate>Sat, 02 Nov 2019 13:31:26 GMT</pubDate>
+			<dc:creator>Calbow</dc:creator>
+			<comments>https://en.wikipedia.org/wiki/Talk:RSS</comments>
+		</item>
+		<item>
+			<title>Monkbot: Task 16: replaced (5×) / removed (0×) deprecated |dead-url= and |deadurl= with |url-status=;</title>
+			<link>https://en.wikipedia.org/w/index.php?title=RSS&amp;diff=917427752&amp;oldid=prev</link>
+			<guid isPermaLink="false">https://en.wikipedia.org/w/index.php?title=RSS&amp;diff=917427752&amp;oldid=prev</guid>
+			<description>&lt;p&gt;&lt;a href=&quot;/wiki/User:Monkbot/task_16:_remove_replace_deprecated_dead-url_params&quot; title=&quot;User:Monkbot/task 16: remove replace deprecated dead-url params&quot;&gt;Task 16&lt;/a&gt;: replaced (5×) / removed (0×) deprecated |dead-url= and |deadurl= with |url-status=;&lt;/p&gt;
+&lt;table class=&quot;diff diff-contentalign-left&quot; data-mw=&quot;interface&quot;&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;tr class=&quot;diff-title&quot; lang=&quot;en&quot;&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;← Previous revision&lt;/td&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;Revision as of 19:55, 23 September 2019&lt;/td&gt;
+				&lt;/tr&gt;&lt;tr&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 57:&lt;/td&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 57:&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt; | accessdate=2006-10-31 }}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt; | accessdate=2006-10-31 }}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;−&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #ffe49c; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;This would be Netscape's last participation in RSS development for eight years. As RSS was being embraced by web publishers who wanted their feeds to be used on My.Netscape.Com and other early RSS portals, Netscape dropped RSS support from My.Netscape.Com in April 2001 during new owner [[AOL]]'s restructuring of the company, also removing documentation and tools that supported the format.&amp;lt;ref&amp;gt;{{cite web |url=http://www.webreference.com/authoring/languages/xml/rss/1/ |title=The Evolution of RSS |author=Andrew King |date=2003-04-13 |accessdate=2007-01-17 |archive-url=https://web.archive.org/web/20070119031128/http://www.webreference.com/authoring/languages/xml/rss/1/ |archive-date=2007-01-19 |&lt;del class=&quot;diffchange diffchange-inline&quot;&gt;dead&lt;/del&gt;-&lt;del class=&quot;diffchange diffchange-inline&quot;&gt;url=yes |df&lt;/del&gt;= }}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;+&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;This would be Netscape's last participation in RSS development for eight years. As RSS was being embraced by web publishers who wanted their feeds to be used on My.Netscape.Com and other early RSS portals, Netscape dropped RSS support from My.Netscape.Com in April 2001 during new owner [[AOL]]'s restructuring of the company, also removing documentation and tools that supported the format.&amp;lt;ref&amp;gt;{{cite web |url=http://www.webreference.com/authoring/languages/xml/rss/1/ |title=The Evolution of RSS |author=Andrew King |date=2003-04-13 |accessdate=2007-01-17 |archive-url=https://web.archive.org/web/20070119031128/http://www.webreference.com/authoring/languages/xml/rss/1/ |archive-date=2007-01-19 |&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;url&lt;/ins&gt;-&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;status&lt;/ins&gt;=&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;dead&lt;/ins&gt; }}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;Two parties emerged to fill the void, with neither Netscape's help nor approval: The [[RSS-DEV Working Group]] and [[Dave Winer]], whose [[UserLand Software]] had published some of the first publishing tools outside Netscape that could read and write RSS.&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;Two parties emerged to fill the void, with neither Netscape's help nor approval: The [[RSS-DEV Working Group]] and [[Dave Winer]], whose [[UserLand Software]] had published some of the first publishing tools outside Netscape that could read and write RSS.&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;−&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #ffe49c; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;Winer published a modified version of the RSS 0.91 specification on the UserLand website, covering how it was being used in his company's products, and claimed copyright to the document.&amp;lt;ref&amp;gt;{{cite web |url=http://backend.userland.com/rss091#copyrightAndDisclaimer |title=RSS 0.91: Copyright and Disclaimer |author=Winer, Dave |date=2000-06-04 |publisher=UserLand Software |accessdate=2006-10-31 |&lt;del class=&quot;diffchange diffchange-inline&quot;&gt;deadurl&lt;/del&gt;=&lt;del class=&quot;diffchange diffchange-inline&quot;&gt;yes&lt;/del&gt; |archiveurl=https://web.archive.org/web/20061110001520/http://backend.userland.com/rss091#copyrightAndDisclaimer |archivedate=2006-11-10&lt;del class=&quot;diffchange diffchange-inline&quot;&gt; |df=&lt;/del&gt; }}&amp;lt;/ref&amp;gt; A few months later, UserLand filed a U.S. trademark registration for RSS, but failed to respond to a [[USPTO]] trademark examiner's request and the request was rejected in December 2001.&amp;lt;ref&amp;gt;{{cite web|url=http://tarr.uspto.gov/servlet/tarr?regser=serial&amp;amp;entry=78025336 |title='RSS' Trademark Latest Status Info |author=U.S. Patent &amp;amp; Trademark Office }}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;+&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;Winer published a modified version of the RSS 0.91 specification on the UserLand website, covering how it was being used in his company's products, and claimed copyright to the document.&amp;lt;ref&amp;gt;{{cite web |url=http://backend.userland.com/rss091#copyrightAndDisclaimer |title=RSS 0.91: Copyright and Disclaimer |author=Winer, Dave |date=2000-06-04 |publisher=UserLand Software |accessdate=2006-10-31 |&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;url-status&lt;/ins&gt;=&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;dead&lt;/ins&gt; |archiveurl=https://web.archive.org/web/20061110001520/http://backend.userland.com/rss091#copyrightAndDisclaimer |archivedate=2006-11-10 }}&amp;lt;/ref&amp;gt; A few months later, UserLand filed a U.S. trademark registration for RSS, but failed to respond to a [[USPTO]] trademark examiner's request and the request was rejected in December 2001.&amp;lt;ref&amp;gt;{{cite web|url=http://tarr.uspto.gov/servlet/tarr?regser=serial&amp;amp;entry=78025336 |title='RSS' Trademark Latest Status Info |author=U.S. Patent &amp;amp; Trademark Office }}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;The RSS-DEV Working Group, a project whose members included Guha and representatives of [[O'Reilly Media]] and [[Moreover Technologies|Moreover]], produced RSS 1.0 in December 2000.&amp;lt;ref&amp;gt;{{cite web |url=http://web.resource.org/rss/1.0/spec |title=RDF Site Summary (RSS) 1.0 |author=RSS-DEV Working Group |date=2000-12-09 |accessdate=2006-10-31 }}&amp;lt;/ref&amp;gt; This new version, which reclaimed the name RDF Site Summary from RSS 0.9, reintroduced support for RDF and added [[XML namespaces]] support, adopting elements from standard metadata vocabularies such as [[Dublin Core]].&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;The RSS-DEV Working Group, a project whose members included Guha and representatives of [[O'Reilly Media]] and [[Moreover Technologies|Moreover]], produced RSS 1.0 in December 2000.&amp;lt;ref&amp;gt;{{cite web |url=http://web.resource.org/rss/1.0/spec |title=RDF Site Summary (RSS) 1.0 |author=RSS-DEV Working Group |date=2000-12-09 |accessdate=2006-10-31 }}&amp;lt;/ref&amp;gt; This new version, which reclaimed the name RDF Site Summary from RSS 0.9, reintroduced support for RDF and added [[XML namespaces]] support, adopting elements from standard metadata vocabularies such as [[Dublin Core]].&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;−&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #ffe49c; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;In December 2000, Winer released RSS 0.92&amp;lt;ref&amp;gt;{{cite web |url=http://backend.userland.com/rss092 |title=RSS 0.92 Specification |author=Winer, Dave |date=2000-12-25 |publisher=UserLand Software |accessdate=2006-10-31 |&lt;del class=&quot;diffchange diffchange-inline&quot;&gt;deadurl&lt;/del&gt;=&lt;del class=&quot;diffchange diffchange-inline&quot;&gt;yes&lt;/del&gt; |archiveurl=https://web.archive.org/web/20110131184230/http://backend.userland.com/rss092 |archivedate=2011-01-31&lt;del class=&quot;diffchange diffchange-inline&quot;&gt; |df=&lt;/del&gt; }}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;+&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;In December 2000, Winer released RSS 0.92&amp;lt;ref&amp;gt;{{cite web |url=http://backend.userland.com/rss092 |title=RSS 0.92 Specification |author=Winer, Dave |date=2000-12-25 |publisher=UserLand Software |accessdate=2006-10-31 |&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;url-status&lt;/ins&gt;=&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;dead&lt;/ins&gt; |archiveurl=https://web.archive.org/web/20110131184230/http://backend.userland.com/rss092 |archivedate=2011-01-31 }}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;−&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #ffe49c; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;a minor set of changes aside from the introduction of the enclosure element, which permitted audio files to be carried in RSS feeds and helped spark [[podcast]]ing. He also released drafts of RSS 0.93 and RSS 0.94 that were subsequently withdrawn.&amp;lt;ref&amp;gt;{{cite web |url=http://backend.userland.com/rss093 |title=RSS 0.93 Specification |author=Winer, Dave |date=2001-04-20 |publisher=UserLand Software |accessdate=2006-10-31 |&lt;del class=&quot;diffchange diffchange-inline&quot;&gt;deadurl&lt;/del&gt;=&lt;del class=&quot;diffchange diffchange-inline&quot;&gt;yes&lt;/del&gt; |archiveurl=https://web.archive.org/web/20061102171227/http://backend.userland.com/rss093 |archivedate=2006-11-02&lt;del class=&quot;diffchange diffchange-inline&quot;&gt; |df=&lt;/del&gt; }}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;+&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;a minor set of changes aside from the introduction of the enclosure element, which permitted audio files to be carried in RSS feeds and helped spark [[podcast]]ing. He also released drafts of RSS 0.93 and RSS 0.94 that were subsequently withdrawn.&amp;lt;ref&amp;gt;{{cite web |url=http://backend.userland.com/rss093 |title=RSS 0.93 Specification |author=Winer, Dave |date=2001-04-20 |publisher=UserLand Software |accessdate=2006-10-31 |&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;url-status&lt;/ins&gt;=&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;dead&lt;/ins&gt; |archiveurl=https://web.archive.org/web/20061102171227/http://backend.userland.com/rss093 |archivedate=2006-11-02 }}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;In September 2002, Winer released a major new version of the format, RSS 2.0, that redubbed its initials Really Simple Syndication. RSS 2.0 removed the ''type'' attribute added in the RSS 0.94 draft and added support for namespaces. To preserve backward compatibility with RSS 0.92, namespace support applies only to other content included within an RSS 2.0 feed, not the RSS 2.0 elements themselves.&amp;lt;ref&amp;gt;{{cite web |url=http://cyber.law.harvard.edu/rss/toplevelNamespace.html |title=Top-level namespaces |author=Harvard Law |date=2007-04-14 |accessdate=2009-08-03}}&amp;lt;/ref&amp;gt; (Although other standards such as [[Atom (standard)|Atom]] attempt to correct this limitation, RSS feeds are not aggregated with other content often enough to shift the popularity from RSS to other formats having full namespace support.)&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;In September 2002, Winer released a major new version of the format, RSS 2.0, that redubbed its initials Really Simple Syndication. RSS 2.0 removed the ''type'' attribute added in the RSS 0.94 draft and added support for namespaces. To preserve backward compatibility with RSS 0.92, namespace support applies only to other content included within an RSS 2.0 feed, not the RSS 2.0 elements themselves.&amp;lt;ref&amp;gt;{{cite web |url=http://cyber.law.harvard.edu/rss/toplevelNamespace.html |title=Top-level namespaces |author=Harvard Law |date=2007-04-14 |accessdate=2009-08-03}}&amp;lt;/ref&amp;gt; (Although other standards such as [[Atom (standard)|Atom]] attempt to correct this limitation, RSS feeds are not aggregated with other content often enough to shift the popularity from RSS to other formats having full namespace support.)&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 146:&lt;/td&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 146:&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;The most serious compatibility problem is with HTML markup. Userland's RSS reader—generally considered as the reference implementation—did not originally filter out [[HTML]] markup from feeds. As a result, publishers began placing HTML markup into the titles and descriptions of items in their RSS feeds. This behavior has become expected of readers, to the point of becoming a [[de facto]] standard,{{Citation needed|date=January 2011}} though there is still some inconsistency in how software handles this markup, particularly in titles. The RSS 2.0 specification was later updated to include examples of entity-encoded HTML; however, all prior plain text usages remain valid.&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;The most serious compatibility problem is with HTML markup. Userland's RSS reader—generally considered as the reference implementation—did not originally filter out [[HTML]] markup from feeds. As a result, publishers began placing HTML markup into the titles and descriptions of items in their RSS feeds. This behavior has become expected of readers, to the point of becoming a [[de facto]] standard,{{Citation needed|date=January 2011}} though there is still some inconsistency in how software handles this markup, particularly in titles. The RSS 2.0 specification was later updated to include examples of entity-encoded HTML; however, all prior plain text usages remain valid.&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;−&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #ffe49c; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;{{As of|2007|1}}, tracking data from www.syndic8.com indicates that the three main versions of RSS in current use are 0.91, 1.0, and 2.0, constituting 13%, 17%, and 67% of worldwide RSS usage, respectively.&amp;lt;ref&amp;gt;{{cite web|last=Holzner |first=Steven |url=http://www.peachpit.com/articles/article.aspx?p=674690 |title=Peachpit article |publisher=Peachpit article |date= |accessdate=2010-12-11}}&amp;lt;/ref&amp;gt; These figures, however, do not include usage of the rival web feed format Atom. {{As of|2008|8}}, the syndic8.com website is indexing 546,069 total feeds, of which 86,496 (16%) were some dialect of Atom and 438,102 were some dialect of RSS.&amp;lt;ref&amp;gt;{{cite web |url=http://www.syndic8.com/stats.php?Section=feeds#tabtable |archive-url=https://web.archive.org/web/20020803040757/http://www.syndic8.com/stats.php?Section=feeds#tabtable |&lt;del class=&quot;diffchange diffchange-inline&quot;&gt;dead-&lt;/del&gt;url=&lt;del class=&quot;diffchange diffchange-inline&quot;&gt;yes&lt;/del&gt; |archive-date=2002-08-03 |title=Syndic8 stats table |publisher=Syndic8.com&lt;del class=&quot;diffchange diffchange-inline&quot;&gt; |date=&lt;/del&gt; |accessdate=2011-08-12&lt;del class=&quot;diffchange diffchange-inline&quot;&gt; |df=&lt;/del&gt; }}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;+&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;{{As of|2007|1}}, tracking data from www.syndic8.com indicates that the three main versions of RSS in current use are 0.91, 1.0, and 2.0, constituting 13%, 17%, and 67% of worldwide RSS usage, respectively.&amp;lt;ref&amp;gt;{{cite web|last=Holzner |first=Steven |url=http://www.peachpit.com/articles/article.aspx?p=674690 |title=Peachpit article |publisher=Peachpit article |date= |accessdate=2010-12-11}}&amp;lt;/ref&amp;gt; These figures, however, do not include usage of the rival web feed format Atom. {{As of|2008|8}}, the syndic8.com website is indexing 546,069 total feeds, of which 86,496 (16%) were some dialect of Atom and 438,102 were some dialect of RSS.&amp;lt;ref&amp;gt;{{cite web |url=http://www.syndic8.com/stats.php?Section=feeds#tabtable |archive-url=https://web.archive.org/web/20020803040757/http://www.syndic8.com/stats.php?Section=feeds#tabtable |url&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;-status&lt;/ins&gt;=&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;dead&lt;/ins&gt; |archive-date=2002-08-03 |title=Syndic8 stats table |publisher=Syndic8.com |accessdate=2011-08-12 }}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;== Modules ==&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;== Modules ==&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;!-- diff cache key enwiki:diff:wikidiff2:1.12:old-916914183:rev-917427752:1.10.0 --&gt;
+&lt;/table&gt;</description>
+			<pubDate>Mon, 23 Sep 2019 19:55:06 GMT</pubDate>
+			<dc:creator>Monkbot</dc:creator>
+			<comments>https://en.wikipedia.org/wiki/Talk:RSS</comments>
+		</item>
+		<item>
+			<title>Koavf: /* RSS compared with Atom */</title>
+			<link>https://en.wikipedia.org/w/index.php?title=RSS&amp;diff=916914183&amp;oldid=prev</link>
+			<guid isPermaLink="false">https://en.wikipedia.org/w/index.php?title=RSS&amp;diff=916914183&amp;oldid=prev</guid>
+			<description>&lt;p&gt;&lt;span dir=&quot;auto&quot;&gt;&lt;span class=&quot;autocomment&quot;&gt;RSS compared with Atom&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;table class=&quot;diff diff-contentalign-left&quot; data-mw=&quot;interface&quot;&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;tr class=&quot;diff-title&quot; lang=&quot;en&quot;&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;← Previous revision&lt;/td&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;Revision as of 09:13, 21 September 2019&lt;/td&gt;
+				&lt;/tr&gt;&lt;tr&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 200:&lt;/td&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 200:&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;|&amp;lt;code&amp;gt;rights&amp;lt;/code&amp;gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;|&amp;lt;code&amp;gt;rights&amp;lt;/code&amp;gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;|-&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;|-&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-empty&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;+&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;|—&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;−&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #ffe49c; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;|&amp;lt;code&amp;gt;-&amp;lt;/code&amp;gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-empty&quot;&gt;&amp;#160;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;|&amp;lt;code&amp;gt;subtitle&amp;lt;/code&amp;gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;|&amp;lt;code&amp;gt;subtitle&amp;lt;/code&amp;gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;|-&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;|-&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 234:&lt;/td&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 234:&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;|-&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;|-&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;|&amp;lt;code&amp;gt;[[time to live|ttl]]&amp;lt;/code&amp;gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;|&amp;lt;code&amp;gt;[[time to live|ttl]]&amp;lt;/code&amp;gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-empty&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;+&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;|—&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;−&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #ffe49c; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;|&amp;lt;code&amp;gt;-&amp;lt;/code&amp;gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-empty&quot;&gt;&amp;#160;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;|}&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;|}&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;!-- diff cache key enwiki:diff:wikidiff2:1.12:old-903768331:rev-916914183:1.10.0 --&gt;
+&lt;/table&gt;</description>
+			<pubDate>Sat, 21 Sep 2019 09:13:08 GMT</pubDate>
+			<dc:creator>Koavf</dc:creator>
+			<comments>https://en.wikipedia.org/wiki/Talk:RSS</comments>
+		</item>
+		<item>
+			<title>CecilWard: Ill defined, use of jargon</title>
+			<link>https://en.wikipedia.org/w/index.php?title=RSS&amp;diff=903768331&amp;oldid=prev</link>
+			<guid isPermaLink="false">https://en.wikipedia.org/w/index.php?title=RSS&amp;diff=903768331&amp;oldid=prev</guid>
+			<description>&lt;p&gt;Ill defined, use of jargon&lt;/p&gt;
+&lt;table class=&quot;diff diff-contentalign-left&quot; data-mw=&quot;interface&quot;&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;tr class=&quot;diff-title&quot; lang=&quot;en&quot;&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;← Previous revision&lt;/td&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;Revision as of 20:52, 27 June 2019&lt;/td&gt;
+				&lt;/tr&gt;&lt;tr&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 22:&lt;/td&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 22:&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;}}&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;}}&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;−&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #ffe49c; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;'''RSS''' (originally '''[[Resource Description Framework|RDF]] Site Summary'''; later, two competing approaches emerged, which used the [[backronym]]s '''Rich Site Summary''' and '''Really Simple Syndication''' respectively)&amp;lt;ref name=&quot;powers-2003-1&quot;/&amp;gt; is a type of [[web feed]]&amp;lt;ref name=Netsc99/&amp;gt; which allows users and applications to access updates to &lt;del class=&quot;diffchange diffchange-inline&quot;&gt;[[online content]]&lt;/del&gt; in a standardized, computer-readable format. These feeds can, for example, allow a user to keep track of many different websites in a single [[news aggregator]]. The news aggregator will automatically check the RSS feed for new content, allowing the content to be automatically passed from website to website or from website to user. This passing of content is called [[web syndication]]. Websites usually use RSS feeds to publish frequently updated information, such as [[blog]] entries, news headlines, or episodes of audio and video series. RSS is also used to distribute [[Podcast|podcasts]]. An RSS document (called &quot;feed&quot;, &quot;web feed&quot;,&amp;lt;ref name=&quot;GuardWF&quot;&amp;gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;+&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;'''RSS''' (originally '''[[Resource Description Framework|RDF]] Site Summary'''; later, two competing approaches emerged, which used the [[backronym]]s '''Rich Site Summary''' and '''Really Simple Syndication''' respectively)&amp;lt;ref name=&quot;powers-2003-1&quot;/&amp;gt; is a type of [[web feed]]&amp;lt;ref name=Netsc99/&amp;gt; which allows users and applications to access updates to &lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;websites&lt;/ins&gt; in a standardized, computer-readable format. These feeds can, for example, allow a user to keep track of many different websites in a single [[news aggregator]]. The news aggregator will automatically check the RSS feed for new content, allowing the content to be automatically passed from website to website or from website to user. This passing of content is called [[web syndication]]. Websites usually use RSS feeds to publish frequently updated information, such as [[blog]] entries, news headlines, or episodes of audio and video series. RSS is also used to distribute [[Podcast|podcasts]]. An RSS document (called &quot;feed&quot;, &quot;web feed&quot;,&amp;lt;ref name=&quot;GuardWF&quot;&amp;gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;  &quot;Web feeds | RSS | The Guardian | guardian.co.uk&quot;,&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;  &quot;Web feeds | RSS | The Guardian | guardian.co.uk&quot;,&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;  ''The Guardian'', London, 2008, webpage:&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;  ''The Guardian'', London, 2008, webpage:&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;!-- diff cache key enwiki:diff:wikidiff2:1.12:old-898076145:rev-903768331:1.10.0 --&gt;
+&lt;/table&gt;</description>
+			<pubDate>Thu, 27 Jun 2019 20:52:50 GMT</pubDate>
+			<dc:creator>CecilWard</dc:creator>
+			<comments>https://en.wikipedia.org/wiki/Talk:RSS</comments>
+		</item>
+		<item>
+			<title>Koavf: /* External links */</title>
+			<link>https://en.wikipedia.org/w/index.php?title=RSS&amp;diff=898076145&amp;oldid=prev</link>
+			<guid isPermaLink="false">https://en.wikipedia.org/w/index.php?title=RSS&amp;diff=898076145&amp;oldid=prev</guid>
+			<description>&lt;p&gt;&lt;span dir=&quot;auto&quot;&gt;&lt;span class=&quot;autocomment&quot;&gt;External links&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;table class=&quot;diff diff-contentalign-left&quot; data-mw=&quot;interface&quot;&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;tr class=&quot;diff-title&quot; lang=&quot;en&quot;&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;← Previous revision&lt;/td&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;Revision as of 07:08, 21 May 2019&lt;/td&gt;
+				&lt;/tr&gt;&lt;tr&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 261:&lt;/td&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 261:&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;== External links ==&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;== External links ==&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-empty&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;+&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;{{sisterlinks|v=RSS Feeds Howto|c=category:RSS|d=Q45432|n=no|s=no|species=no|q=no|b=XML - Managing Data Exchange/RSS|m=Syndication feeds|mw=Extension:RSS}}&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;−&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #ffe49c; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;{{Commons category|RSS}}&lt;/div&gt;&lt;/td&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-empty&quot;&gt;&amp;#160;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;&amp;lt;!-- ==================== NoMoreLinks =========================--&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;&amp;lt;!-- ==================== NoMoreLinks =========================--&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;-- DO ''not'' ADD MORE LINKS HERE. WIKIPEDIA IS ''not'' COLLECTIONS OF LINKS&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;-- DO ''not'' ADD MORE LINKS HERE. WIKIPEDIA IS ''not'' COLLECTIONS OF LINKS&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;!-- diff cache key enwiki:diff:wikidiff2:1.12:old-897108954:rev-898076145:1.10.0 --&gt;
+&lt;/table&gt;</description>
+			<pubDate>Tue, 21 May 2019 07:08:40 GMT</pubDate>
+			<dc:creator>Koavf</dc:creator>
+			<comments>https://en.wikipedia.org/wiki/Talk:RSS</comments>
+		</item>
+		<item>
+			<title>Tollsjo: Linking &quot;RSS icon&quot; to Web_feed#Feed_icon</title>
+			<link>https://en.wikipedia.org/w/index.php?title=RSS&amp;diff=897108954&amp;oldid=prev</link>
+			<guid isPermaLink="false">https://en.wikipedia.org/w/index.php?title=RSS&amp;diff=897108954&amp;oldid=prev</guid>
+			<description>&lt;p&gt;Linking &amp;quot;RSS icon&amp;quot; to Web_feed#Feed_icon&lt;/p&gt;
+&lt;table class=&quot;diff diff-contentalign-left&quot; data-mw=&quot;interface&quot;&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;tr class=&quot;diff-title&quot; lang=&quot;en&quot;&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;← Previous revision&lt;/td&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;Revision as of 20:41, 14 May 2019&lt;/td&gt;
+				&lt;/tr&gt;&lt;tr&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 84:&lt;/td&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 84:&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;In July 2003, Winer and UserLand Software assigned the copyright of the RSS 2.0 specification to Harvard's [[Berkman Center for Internet &amp;amp; Society]], where he had just begun a term as a visiting fellow.&amp;lt;ref&amp;gt;{{cite web |url=http://www.rssboard.org/advisory-board-notes |title=Advisory Board Notes |date=2003-07-18 |publisher=[[RSS Advisory Board]] |accessdate=2007-09-04 }}&amp;lt;/ref&amp;gt; At the same time, Winer launched the [[RSS Advisory Board]] with [[Brent Simmons]] and [[Jon Udell]], a group whose purpose was to maintain and publish the specification and answer questions about the format.&amp;lt;ref&amp;gt;{{cite web|url=http://www.scripting.com/2003/07/18.html#rss20News |title=RSS 2.0 News|publisher=[[Dave Winer]]|accessdate=2007-09-04 }}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;In July 2003, Winer and UserLand Software assigned the copyright of the RSS 2.0 specification to Harvard's [[Berkman Center for Internet &amp;amp; Society]], where he had just begun a term as a visiting fellow.&amp;lt;ref&amp;gt;{{cite web |url=http://www.rssboard.org/advisory-board-notes |title=Advisory Board Notes |date=2003-07-18 |publisher=[[RSS Advisory Board]] |accessdate=2007-09-04 }}&amp;lt;/ref&amp;gt; At the same time, Winer launched the [[RSS Advisory Board]] with [[Brent Simmons]] and [[Jon Udell]], a group whose purpose was to maintain and publish the specification and answer questions about the format.&amp;lt;ref&amp;gt;{{cite web|url=http://www.scripting.com/2003/07/18.html#rss20News |title=RSS 2.0 News|publisher=[[Dave Winer]]|accessdate=2007-09-04 }}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;−&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #ffe49c; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;In September 2004, Stephen Horlander created the now ubiquitous RSS icon ([[File:Feed-icon.svg|16px|text-bottom]]) for use in the [[Mozilla Firefox]] [[Web Browser|browser]].&amp;lt;ref&amp;gt;{{cite web|url=http://www.squarefree.com/burningedge/2004/09/26/2004-09-26-branch-builds/|title=2004-09-26 Branch builds|publisher=|accessdate=6 October 2014}}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;+&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;In September 2004, Stephen Horlander created the now ubiquitous &lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;[[Web_feed#Feed_icon|&lt;/ins&gt;RSS icon&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt;]]&lt;/ins&gt; ([[File:Feed-icon.svg|16px|text-bottom]]) for use in the [[Mozilla Firefox]] [[Web Browser|browser]].&amp;lt;ref&amp;gt;{{cite web|url=http://www.squarefree.com/burningedge/2004/09/26/2004-09-26-branch-builds/|title=2004-09-26 Branch builds|publisher=|accessdate=6 October 2014}}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;In December 2005, the Microsoft Internet Explorer team&amp;lt;ref&amp;gt;[https://web.archive.org/web/20051216113745/http://blogs.msdn.com/rssteam/archive/2005/12/14/503778.aspx Icons: It’s still orange], Microsoft RSS Blog, December 14, 2005&amp;lt;/ref&amp;gt; and&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;In December 2005, the Microsoft Internet Explorer team&amp;lt;ref&amp;gt;[https://web.archive.org/web/20051216113745/http://blogs.msdn.com/rssteam/archive/2005/12/14/503778.aspx Icons: It’s still orange], Microsoft RSS Blog, December 14, 2005&amp;lt;/ref&amp;gt; and&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;!-- diff cache key enwiki:diff:wikidiff2:1.12:old-893981083:rev-897108954:1.10.0 --&gt;
+&lt;/table&gt;</description>
+			<pubDate>Tue, 14 May 2019 20:41:53 GMT</pubDate>
+			<dc:creator>Tollsjo</dc:creator>
+			<comments>https://en.wikipedia.org/wiki/Talk:RSS</comments>
+		</item>
+		<item>
+			<title>AkshayParkad: /* External links */</title>
+			<link>https://en.wikipedia.org/w/index.php?title=RSS&amp;diff=893981083&amp;oldid=prev</link>
+			<guid isPermaLink="false">https://en.wikipedia.org/w/index.php?title=RSS&amp;diff=893981083&amp;oldid=prev</guid>
+			<description>&lt;p&gt;&lt;span dir=&quot;auto&quot;&gt;&lt;span class=&quot;autocomment&quot;&gt;External links&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;table class=&quot;diff diff-contentalign-left&quot; data-mw=&quot;interface&quot;&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;tr class=&quot;diff-title&quot; lang=&quot;en&quot;&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;← Previous revision&lt;/td&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;Revision as of 20:25, 24 April 2019&lt;/td&gt;
+				&lt;/tr&gt;&lt;tr&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 280:&lt;/td&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 280:&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;* [https://web.archive.org/web/20110718034619/http://diveintomark.org/archives/2002/09/06/history_of_the_rss_fork History of the RSS Fork] (Mark Pilgrim)&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;* [https://web.archive.org/web/20110718034619/http://diveintomark.org/archives/2002/09/06/history_of_the_rss_fork History of the RSS Fork] (Mark Pilgrim)&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;* [http://www.xul.fr/en-xml-rss.html Building an RSS feed] Tutorial with example&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;* [http://www.xul.fr/en-xml-rss.html Building an RSS feed] Tutorial with example&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-empty&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;+&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;* [https://www.enggstudy.com/2019/04/rss-reader-using-python-and-django.html Make RSS Reader] RSS Reader Project&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;{{Web syndication}}&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;{{Web syndication}}&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;!-- diff cache key enwiki:diff:wikidiff2:1.12:old-892804362:rev-893981083:1.10.0 --&gt;
+&lt;/table&gt;</description>
+			<pubDate>Wed, 24 Apr 2019 20:25:42 GMT</pubDate>
+			<dc:creator>AkshayParkad</dc:creator>
+			<comments>https://en.wikipedia.org/wiki/Talk:RSS</comments>
+		</item>
+		<item>
+			<title>InternetArchiveBot: Rescuing 1 sources and tagging 0 as dead. #IABot (v2.0beta14) (Eastmain)</title>
+			<link>https://en.wikipedia.org/w/index.php?title=RSS&amp;diff=892804362&amp;oldid=prev</link>
+			<guid isPermaLink="false">https://en.wikipedia.org/w/index.php?title=RSS&amp;diff=892804362&amp;oldid=prev</guid>
+			<description>&lt;p&gt;Rescuing 1 sources and tagging 0 as dead. #IABot (v2.0beta14) (&lt;a href=&quot;/wiki/User:Eastmain&quot; title=&quot;User:Eastmain&quot;&gt;Eastmain&lt;/a&gt;)&lt;/p&gt;
+&lt;table class=&quot;diff diff-contentalign-left&quot; data-mw=&quot;interface&quot;&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;tr class=&quot;diff-title&quot; lang=&quot;en&quot;&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;← Previous revision&lt;/td&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;Revision as of 00:26, 17 April 2019&lt;/td&gt;
+				&lt;/tr&gt;&lt;tr&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 57:&lt;/td&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 57:&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt; | accessdate=2006-10-31 }}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt; | accessdate=2006-10-31 }}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;−&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #ffe49c; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;This would be Netscape's last participation in RSS development for eight years. As RSS was being embraced by web publishers who wanted their feeds to be used on My.Netscape.Com and other early RSS portals, Netscape dropped RSS support from My.Netscape.Com in April 2001 during new owner [[AOL]]'s restructuring of the company, also removing documentation and tools that supported the format.&amp;lt;ref&amp;gt;{{cite web |url=http://www.webreference.com/authoring/languages/xml/rss/1/ |title=The Evolution of RSS |author=Andrew King |date=2003-04-13 |accessdate=2007-01-17 }}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;+&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;This would be Netscape's last participation in RSS development for eight years. As RSS was being embraced by web publishers who wanted their feeds to be used on My.Netscape.Com and other early RSS portals, Netscape dropped RSS support from My.Netscape.Com in April 2001 during new owner [[AOL]]'s restructuring of the company, also removing documentation and tools that supported the format.&amp;lt;ref&amp;gt;{{cite web |url=http://www.webreference.com/authoring/languages/xml/rss/1/ |title=The Evolution of RSS |author=Andrew King |date=2003-04-13 |accessdate=2007-01-17&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt; |archive-url=https://web.archive.org/web/20070119031128/http://www.webreference.com/authoring/languages/xml/rss/1/ |archive-date=2007-01-19 |dead-url=yes |df=&lt;/ins&gt; }}&amp;lt;/ref&amp;gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;Two parties emerged to fill the void, with neither Netscape's help nor approval: The [[RSS-DEV Working Group]] and [[Dave Winer]], whose [[UserLand Software]] had published some of the first publishing tools outside Netscape that could read and write RSS.&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;Two parties emerged to fill the void, with neither Netscape's help nor approval: The [[RSS-DEV Working Group]] and [[Dave Winer]], whose [[UserLand Software]] had published some of the first publishing tools outside Netscape that could read and write RSS.&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;!-- diff cache key enwiki:diff:wikidiff2:1.12:old-883222614:rev-892804362:1.10.0 --&gt;
+&lt;/table&gt;</description>
+			<pubDate>Wed, 17 Apr 2019 00:26:58 GMT</pubDate>
+			<dc:creator>InternetArchiveBot</dc:creator>
+			<comments>https://en.wikipedia.org/wiki/Talk:RSS</comments>
+		</item>
+		<item>
+			<title>ALLurGroceries: /* RSS to email */</title>
+			<link>https://en.wikipedia.org/w/index.php?title=RSS&amp;diff=883222614&amp;oldid=prev</link>
+			<guid isPermaLink="false">https://en.wikipedia.org/w/index.php?title=RSS&amp;diff=883222614&amp;oldid=prev</guid>
+			<description>&lt;p&gt;&lt;span dir=&quot;auto&quot;&gt;&lt;span class=&quot;autocomment&quot;&gt;RSS to email&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;table class=&quot;diff diff-contentalign-left&quot; data-mw=&quot;interface&quot;&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;tr class=&quot;diff-title&quot; lang=&quot;en&quot;&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;← Previous revision&lt;/td&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;Revision as of 01:36, 14 February 2019&lt;/td&gt;
+				&lt;/tr&gt;&lt;tr&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 172:&lt;/td&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 172:&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;== RSS to email==&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;== RSS to email==&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;{{See also|WebSub}}&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;{{See also|WebSub}}&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;−&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #ffe49c; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;Some services deliver RSS to email inbox, sending updates from user's personal selection and schedules.&amp;lt;ref&amp;gt;{{cite web|url=https://blogtrottr.com/about/|title=Why Blogtrottr?|publisher=|accessdate=26 January 2017}}&amp;lt;/ref&amp;gt;&amp;lt;ref&amp;gt;{{cite web|url=https://blogtrottr.com/|title=Free realtime RSS and Atom feed to email service. Get your favourite blogs, feeds, and news delivered to your inbox.|publisher=|accessdate=26 January 2017}}&amp;lt;/ref&amp;gt; Conversely, some services deliver email to RSS readers.&amp;lt;ref&amp;gt;{{cite web|url=https://rss.com/|title=RSS Feed Reader, your tool for saving time and money at RSS.com|publisher=|accessdate=26 January 2017}}&amp;lt;/ref&amp;gt; Examples of those services include [https://blogtrottr.com Blogtrottr], [[IFTTT]] and [[Zapier]].&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;+&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;Some services deliver RSS to&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt; an&lt;/ins&gt; email inbox, sending updates from user's personal selection and schedules.&amp;lt;ref&amp;gt;{{cite web|url=https://blogtrottr.com/about/|title=Why Blogtrottr?|publisher=|accessdate=26 January 2017}}&amp;lt;/ref&amp;gt;&amp;lt;ref&amp;gt;{{cite web|url=https://blogtrottr.com/|title=Free realtime RSS and Atom feed to email service. Get your favourite blogs, feeds, and news delivered to your inbox.|publisher=|accessdate=26 January 2017}}&amp;lt;/ref&amp;gt; Conversely, some services deliver email to RSS readers.&amp;lt;ref&amp;gt;{{cite web|url=https://rss.com/|title=RSS Feed Reader, your tool for saving time and money at RSS.com|publisher=|accessdate=26 January 2017}}&amp;lt;/ref&amp;gt; Examples of those services include [https://blogtrottr.com Blogtrottr], [[IFTTT]] and [[Zapier]].&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;== RSS compared with Atom ==&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;== RSS compared with Atom ==&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;!-- diff cache key enwiki:diff:wikidiff2:1.12:old-877845639:rev-883222614:1.10.0 --&gt;
+&lt;/table&gt;</description>
+			<pubDate>Thu, 14 Feb 2019 01:36:05 GMT</pubDate>
+			<dc:creator>ALLurGroceries</dc:creator>
+			<comments>https://en.wikipedia.org/wiki/Talk:RSS</comments>
+		</item>
+		<item>
+			<title>Koavf: /* top */</title>
+			<link>https://en.wikipedia.org/w/index.php?title=RSS&amp;diff=877845639&amp;oldid=prev</link>
+			<guid isPermaLink="false">https://en.wikipedia.org/w/index.php?title=RSS&amp;diff=877845639&amp;oldid=prev</guid>
+			<description>&lt;p&gt;&lt;span dir=&quot;auto&quot;&gt;&lt;span class=&quot;autocomment&quot;&gt;top&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;table class=&quot;diff diff-contentalign-left&quot; data-mw=&quot;interface&quot;&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;col class=&quot;diff-marker&quot; /&gt;
+				&lt;col class=&quot;diff-content&quot; /&gt;
+				&lt;tr class=&quot;diff-title&quot; lang=&quot;en&quot;&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;← Previous revision&lt;/td&gt;
+				&lt;td colspan=&quot;2&quot; style=&quot;background-color: #fff; color: #222; text-align: center;&quot;&gt;Revision as of 07:16, 11 January 2019&lt;/td&gt;
+				&lt;/tr&gt;&lt;tr&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 22:&lt;/td&gt;
+  &lt;td colspan=&quot;2&quot; class=&quot;diff-lineno&quot;&gt;Line 22:&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;}}&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;}}&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;−&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #ffe49c; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;'''RSS''' (originally '''[[Resource Description Framework|RDF]] Site Summary'''; later, two competing approaches emerged, which used the [[backronym]]s '''Rich Site Summary''' and '''Really Simple Syndication''' respectively)&amp;lt;ref name=&quot;powers-2003-1&quot;/&amp;gt; is a type of [[web feed]]&amp;lt;ref name=Netsc99/&amp;gt; which allows users and applications to access updates to [[online content]] in a standardized, computer-readable format. These feeds can, for example, allow a user to keep track of many different websites in a single [[news aggregator]]. The news aggregator will automatically check the RSS feed for new content, allowing the content to be automatically passed from website to website or from website to user. This passing of content is called [[web syndication]]. Websites usually use RSS feeds to publish frequently updated information, such as [[blog]] entries, news headlines, audio&lt;del class=&quot;diffchange diffchange-inline&quot;&gt;,&lt;/del&gt; video. RSS is also used to distribute [[Podcast|podcasts]]. An RSS document (called &quot;feed&quot;, &quot;web feed&quot;,&amp;lt;ref name=&quot;GuardWF&quot;&amp;gt;&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;+&lt;/td&gt;
+  &lt;td style=&quot;color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #a3d3ff; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;'''RSS''' (originally '''[[Resource Description Framework|RDF]] Site Summary'''; later, two competing approaches emerged, which used the [[backronym]]s '''Rich Site Summary''' and '''Really Simple Syndication''' respectively)&amp;lt;ref name=&quot;powers-2003-1&quot;/&amp;gt; is a type of [[web feed]]&amp;lt;ref name=Netsc99/&amp;gt; which allows users and applications to access updates to [[online content]] in a standardized, computer-readable format. These feeds can, for example, allow a user to keep track of many different websites in a single [[news aggregator]]. The news aggregator will automatically check the RSS feed for new content, allowing the content to be automatically passed from website to website or from website to user. This passing of content is called [[web syndication]]. Websites usually use RSS feeds to publish frequently updated information, such as [[blog]] entries, news headlines,&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt; or episodes of&lt;/ins&gt; audio&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt; and&lt;/ins&gt; video&lt;ins class=&quot;diffchange diffchange-inline&quot;&gt; series&lt;/ins&gt;. RSS is also used to distribute [[Podcast|podcasts]]. An RSS document (called &quot;feed&quot;, &quot;web feed&quot;,&amp;lt;ref name=&quot;GuardWF&quot;&amp;gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;  &quot;Web feeds | RSS | The Guardian | guardian.co.uk&quot;,&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;  &quot;Web feeds | RSS | The Guardian | guardian.co.uk&quot;,&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;  ''The Guardian'', London, 2008, webpage:&lt;/div&gt;&lt;/td&gt;
+  &lt;td class=&quot;diff-marker&quot;&gt;&amp;#160;&lt;/td&gt;
+  &lt;td style=&quot;background-color: #f8f9fa; color: #222; font-size: 88%; border-style: solid; border-width: 1px 1px 1px 4px; border-radius: 0.33em; border-color: #eaecf0; vertical-align: top; white-space: pre-wrap;&quot;&gt;&lt;div&gt;  ''The Guardian'', London, 2008, webpage:&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;!-- diff cache key enwiki:diff:wikidiff2:1.12:old-873283758:rev-877845639:1.10.0 --&gt;
+&lt;/table&gt;</description>
+			<pubDate>Fri, 11 Jan 2019 07:16:35 GMT</pubDate>
+			<dc:creator>Koavf</dc:creator>
+			<comments>https://en.wikipedia.org/wiki/Talk:RSS</comments>
+		</item>
+</channel></rss>

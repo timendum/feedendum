@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link href="https://martinfowler.com/feed.atom" rel="self"/>
+  <link href="https://martinfowler.com"/>
+  <id>https://martinfowler.com/feed.atom</id>
+  <title>Martin Fowler</title>
+  <subtitle>Master feed of news and updates from martinfowler.com</subtitle>
+  <author>
+    <name>Martin Fowler</name>
+    <email>fowler@acm.org</email>
+    <uri>https://martinfowler.com</uri>
+  </author>
+  <updated>2019-11-18T09:51:00-05:00</updated>
+<entry>
+    <title>Bliki: ExploratoryTesting</title>
+    <link href="https://martinfowler.com/bliki/ExploratoryTesting.html"/>
+    <updated>2019-11-18T09:51:00-05:00</updated>
+    <id>https://martinfowler.com/bliki/ExploratoryTesting.html</id>
+    <category term="bliki"/>
+    <content type="html">
+&lt;p&gt;Exploratory testing is a style of testing that emphasizes a rapid cycle of
+  learning, test design, and test execution. Rather than trying to verify that
+  the software conforms to a pre-written test script, exploratory testing
+  explores the characteristics of the software, raising discoveries that will then be
+  classified as reasonable behavior or failures.&lt;/p&gt;
+
+&lt;p&gt;The exploratory testing mindset is a contrast to that of scripted
+  testing. In &lt;b&gt;scripted testing&lt;/b&gt;, test designers create a script of tests, where
+  each manipulation of the software is written down, together with the expected
+  behavior of the software. These scripts are executed separately, usually many
+  times, and usually by different actors than those who wrote them. If any test
+  demonstrates behavior that doesn't match the expected behavior designed by the
+  test, then we consider this a failure.&lt;/p&gt;
+
+&lt;p&gt;For a long time scripted tests were usually executed by testers,
+  and you'd see lots of relatively junior folks in cubicles clicking through
+  screens following the script and checking the result. In large part due to the
+  influence of communities like Extreme Programming, there's been a
+  shift to automating scripted testing. This allows the tests to be executed
+  faster, and eliminates the human error involved in evaluating the expected
+  behavior. I've long been a firm advocate of automated testing like this, and
+  have seen great success with its use drastically reducing bugs.&lt;/p&gt;
+
+&lt;p&gt;But even the most determined automated testers realize that there are
+  fundamental limitations with the technique, which are limitations of any form
+  of scripted testing. Scripted testing can only verify what is in the script,
+  catching only conditions that are known about. Such tests can be a fine net that
+  catches any bugs that try to get through it, but how do we know that the net
+   covers all it ought to?&lt;/p&gt;
+
+&lt;p&gt;Exploratory testing seeks to test the boundaries of the net, finding new
+  behaviors that aren't in any of the scripts. Often it will find new failures
+  that can be added to the scripts, sometimes it exposes behaviors that are
+  benign, even welcome, but not thought of before.&lt;/p&gt;
+
+&lt;div class="photo "&gt;&lt;img src="https://martinfowler.com/bliki/images/exploratoryTesting/sketch.png"&gt;
+&lt;p class="photoCaption"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Exploratory testing is a much more fluid and informal process than scripted
+  testing, but it still requires discipline to be done well. A good way to do
+  this is to carry out exploratory testing in time-boxed sessions. These
+  sessions focus on a particular aspect of the software. A charter that
+  identifies the target of the session and what information you hope to find is
+  a fine mechanism to provide this focus.&lt;/p&gt;
+
+&lt;div class="book-sidebar"&gt;&lt;span class="img-link"&gt;&lt;a href="https://www.amazon.com/gp/product/1937785025?ie=UTF8&amp;amp;tag=martinfowlerc-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1937785025"&gt;&lt;img class="cover" src="https://martinfowler.com/bliki/images/exploratoryTesting/explore-it.jpg"&gt;&lt;/a&gt;&lt;img src="https://www.assoc-amazon.com/e/ir?t=martinfowlerc-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=0321601912" width="1" height="1" border="0" alt="" style="width: 1px !important; height: 1px !important; border:none !important; margin:0px !important;"&gt;&lt;/span&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/testobsessed"&gt;Elisabeth Hendrickson&lt;/a&gt; is
+    one of the most articulate exponents of exploratory testing, and &lt;a href="https://www.amazon.com/gp/product/1937785025?ie=UTF8&amp;amp;tag=martinfowlerc-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1937785025"&gt;her book&lt;/a&gt;&lt;img src="https://www.assoc-amazon.com/e/ir?t=martinfowlerc-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=0321601912" width="1" height="1" border="0" alt="" style="width: 1px !important; height: 1px !important; border:none !important; margin:0px !important;"&gt; is the first choice to dig for more
+    information on how to do this well.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Such a charter can act as focus, but shouldn't attempt to define details of
+  what will happen in the session. Exploratory testing involves trying things,
+  learning more about what the software does, applying that learning to generate
+  questions and hypotheses, and generating new tests in the moment to gather
+  more information. Often this will spur questions outside the bounds of the
+  charter, that can be explored in later sessions.&lt;/p&gt;
+
+&lt;p&gt;Exploratory testing requires skilled and curious testers, who are
+  comfortable with learning about the software and coming up with new test
+  designs during a session. They also need to be observant, on the lookout for
+  any behavior that might seem odd, and worth further investigation. Often,
+  however, they don't have to be full-time testers. Some teams like to have the
+  whole team carry out exploratory testing, perhaps in pairs or in a single mob.&lt;/p&gt;
+
+&lt;p&gt;Exploratory testing should be a regular activity occurring throughout the
+  software development process. Sadly it's hard to find any guidelines on how
+  much should be done within a project. I'd suggest starting with a one hour
+  session every couple of weeks and see what kinds of information the sessions
+  unearth. Some teams like to arrange half-an-hour or so of exploratory testing
+  whenever they complete a story.&lt;/p&gt;
+
+&lt;p&gt;If you find bugs are getting through to production, that's a
+  sign that there are gaps in the testing regimen. It's worth looking at any bug
+  that escapes to production and thinking about what measures could be taken to
+  either prevent the bug from getting there, or detecting it rapidly when in
+  production. This analysis will help you decide whether you need more
+  exploratory testing. Bear in mind
+  that it will take time to build up the skill to do exploratory testing well, if you haven't
+  done much exploratory testing before.&lt;/p&gt;
+
+&lt;p&gt; I would consider it a red flag if a team
+  isn't doing exploratory testing at all - even if their automated testing was
+  excellent. Even the best automated testing is inherently scripted testing -
+  and that alone is not good enough.&lt;/p&gt;
+
+&lt;div class="acknowledgements"&gt;
+&lt;h2&gt;Acknowledgements&lt;/h2&gt;
+
+&lt;p&gt;Almost all I know about Exploratory Testing comes from Elisabeth
+    Hendrickson's &lt;a href="https://www.amazon.com/gp/product/1937785025?ie=UTF8&amp;amp;tag=martinfowlerc-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1937785025"&gt;fine book&lt;/a&gt;&lt;img src="https://www.assoc-amazon.com/e/ir?t=martinfowlerc-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=0321601912" width="1" height="1" border="0" alt="" style="width: 1px !important; height: 1px !important; border:none !important; margin:0px !important;"&gt;, which is also where I
+    pinched the net metaphor from.&lt;/p&gt;
+
+&lt;p&gt;Aida Manna, Alex Fraser, Bharath Kumar Hemachandran, Chris Ford, Claire
+      Sudbery, Daniel Mondria, David Corrales, David Cullen, David Salazar
+      Villegas, Lina Zubyte, and Philip Peter
+      discussed drafts of this article on our internal mailing list.
+    &lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+
+<entry>
+    <title>Bliki: WaterfallProcess</title>
+    <link href="https://martinfowler.com/bliki/WaterfallProcess.html"/>
+    <updated>2019-11-13T11:10:00-05:00</updated>
+    <id>https://martinfowler.com/bliki/WaterfallProcess.html</id>
+    <category term="bliki"/>
+    <content type="html">
+&lt;p&gt;In the software world, &#x201C;waterfall&#x201D; is commonly used to describe a style of
+  software process, one that contrasts with the ideas of iterative,
+  or agile styles. Like many well-known terms in software it's meaning is
+  ill-defined and origins are obscure - but I find its essential theme is
+  breaking down a large effort into phases based on activity.&lt;/p&gt;
+
+&lt;p&gt;It's not clear how the word &#x201C;waterfall&#x201D; became so prevalent, but most
+  people base its origin on &lt;a href="http://www-scf.usc.edu/~csci201/lectures/Lecture11/royce1970.pdf"&gt;a paper by Winston
+  Royce&lt;/a&gt;, in particular this figure:&lt;/p&gt;
+
+&lt;div class="photo " style="width: 800px;"&gt;&lt;img class="full-size" src="https://martinfowler.com/bliki/images/waterfallProcess/royce-fig2.png" width="800"&gt;
+&lt;p class="photoCaption"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Although this paper seems to be universally acknowledged as the source of
+  the notion of waterfall (based on the shape of the downward cascade of tasks),
+  the term &#x201C;waterfall&#x201D; never appears in the paper. It's not clear how the name
+  appeared later.&lt;/p&gt;
+
+&lt;p&gt;Royce&#x2019;s paper describes his observations on the software development
+  process of the time (late 60s) and how the usual implementation steps could be
+  improved. &lt;span class="foot-ref"&gt;&lt;a href="#footnote-royce-discuss"&gt;[1]&lt;/a&gt;&lt;/span&gt; But &#x201C;waterfall&#x201D; has gone much
+  further, to be used as a general description of a style of software
+  development. For people like me, who speak at software conferences, it almost
+  always only appears in a derogatory manner - I can&#x2019;t recall hearing any
+  conference speaker saying anything good about waterfall for many years.
+  However when talking to practitioners in enterprises I do hear of it spoken as
+  a viable, even preferred, development style. Certainly less so now than in the
+  90s, but more frequently than one might assume by listening to process
+  mavens.&lt;/p&gt;
+
+&lt;p&gt;But what exactly is &#x201C;waterfall&#x201D;? That&#x2019;s not an easy question to answer as,
+  like so many things in software, there is no clear definition. In my
+  judgment, there is one common characteristic that dominates any definition
+  folks use for waterfall, and that&#x2019;s the idea of decomposing effort into phases
+  based on activity.&lt;/p&gt;
+
+&lt;p&gt;Let me unpack that phrase. Let&#x2019;s say I have some software to build, and I
+  think it&#x2019;s going to take about a year to build it. Few people are going to
+  happily say &#x201C;go away for a year and tell me when its done&#x201D;. Instead, most
+  people will want to break down that year into smaller chunks, so they can
+  monitor progress and have confidence that things are on track. The question
+  then is how do we perform this break down?&lt;/p&gt;
+
+&lt;p&gt;The waterfall style, as suggested by the Royce sketch, does it by the
+  activity we are doing. So our 1 year project might be broken down into 2
+  months of analysis, followed by 4 months design, 3 months of coding, and 3
+  months of testing. The contrast here is to an iterative style, where we would
+  take some high level requirements (build a library management system), and
+  divide them into subsets (search catalog, reserve a book, check-out and
+  return, assess fines). We'd then take one of these subsets and spend a couple
+  of months to build working software to implement that functionality,
+  delivering either into a staging environment or preferably into a live
+  production setting. Having done that with one subset, we'd continue with
+  further subsets.&lt;/p&gt;
+
+&lt;div class="photo " style="width: 900px;"&gt;&lt;img class="full-size" src="https://martinfowler.com/bliki/images/waterfallProcess/sketch.png" width="900"&gt;
+&lt;p class="photoCaption"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In this thinking waterfall means &#x201C;do one activity at a time for all the
+  features&#x201D; while iterative means &#x201C;do all activities for one feature at a time&#x201D;.&lt;/p&gt;
+
+&lt;p&gt;If the origin of the word &#x201C;waterfall&#x201D; is murky, so is the notion of how
+  this phase-based breakdown originated. My guess is that it&#x2019;s natural to break
+  down a large task into different activities, especially if you look to
+  activities such as building construction as an inspiration. Each activity
+  requires different skills, so getting all the analysts to complete analysis
+  before you bring in all the coders makes intuitive sense. It seems
+  logical that a misunderstanding of requirements is cheaper to fix before
+  people begin coding - especially considering the state of computers in the
+  late 60s. Finally the same activity-based breakdown can be used as a standard
+  for many projects, while a feature-based breakdown is harder to teach. &lt;span class="foot-ref"&gt;&lt;a href="#footnote-rigid"&gt;[2]&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Although it isn&#x2019;t hard to find people explain why this waterfall thinking
+  isn&#x2019;t a good idea for software development, I should summarize my primary
+  objections to the waterfall style
+  here.
+
+  The waterfall style usually has testing and integration as two of the final
+  phases in the cycle, but these are the most difficult to predict elements in a
+  development project. Problems at these stages lead to rework of many steps of
+  earlier phases, and to significant project delays. It's too easy to declare
+  all but the late phases as "done", with much work missing, and thus it's hard
+  to tell if the project is going well. 
+  There is no opportunity for early releases before all features are done. All this
+  introduces a great deal of risk to the development effort.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, a waterfall approach forces us into a predictive style of
+  planning, it assumes that once you are done with a phase, such as requirements
+  analysis, the resulting deliverable is a
+  stable platform for later phases to base their work on. &lt;span class="foot-ref"&gt;&lt;a href="#footnote-iteration"&gt;[3]&lt;/a&gt;&lt;/span&gt; In practice the vast
+  majority of software projects find they need to change their requirements
+  significantly within a few months, due to everyone learning more about the
+  domain, the characteristics of the software environment, and changes in the
+  business environment. Indeed we've found that
+  delivering a subset of features does more than anything to help clarify what
+  needs to be done next, so an iterative approach allows us to shift to an
+  adaptive planning approach where we update our plans as we learn what the
+  real software needs are. &lt;span class="foot-ref"&gt;&lt;a href="#footnote-suitable"&gt;[4]&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;These are the major reasons
+  why I've &lt;a href="/books/uml.html"&gt;glibly said that&lt;/a&gt; "you should use iterative development only in projects that
+  you want to succeed".&lt;/p&gt;
+
+&lt;p&gt;Waterfalls and iterations may nest inside each other. A six year project
+  might consist of two 3 year projects, where each of the two projects are
+  structured in a waterfall style, but the second project adds additional
+  features. You can think of this as a two-iteration project at the top level
+  with each iteration as a waterfall. Due to the large size and small number of
+  iterations, I'd regard that as primarily a waterfall project. In contrast you
+  might see a project with 16 iterations of one month each, where each
+  iteration is planned in a waterfall style. That I'd see as primarily
+  iterative. While in theory there's potential for a middle ground projects that
+  are hard to classify, in practice it's usually easy to tell that one style
+  predominates.&lt;/p&gt;
+
+&lt;p&gt;It is possible for a mix of waterfall and iterative where early phases
+  (requirements analysis, high level design) are done in a waterfall style while
+  later phases (detailed design, code, test) are done in an iterative manner.
+  This reduces the risks inherent in late testing and integration phases, but
+  does not enable adaptive planning.&lt;/p&gt;
+
+&lt;p&gt;Waterfall is often cast as the alternative to agile software development,
+  but I don't see that as strictly true. Certainly agile processes require an
+  iterative approach and cannot work in a waterfall style. But it is easy to
+  follow an iterative approach (i.e. non-waterfall) but not be agile. &lt;span class="foot-ref"&gt;&lt;a href="#footnote-oo-iterative"&gt;[5]&lt;/a&gt;&lt;/span&gt; I might do
+  this by taking 100 features and dividing them up into ten iterations over the
+  next year, and then expecting that each iteration should complete on time with
+  its planned set of features. If I do this, my initial plan is a predictive
+  plan, if all goes well I should expect the work to closely follow the plan. But
+  &lt;a href="/articles/newMethodology.html#PredictiveVersusAdaptive"&gt;adaptive planning is an essential element&lt;/a&gt; of
+  agile thinking. I expect features to move between iterations, new features to
+  appear, and many features to be discarded as no longer valuable enough.g
+  &lt;/p&gt;
+
+&lt;div class="photo " style="width: 800px;"&gt;&lt;img class="full-size" src="https://martinfowler.com/bliki/images/waterfallProcess/venn3.png" width="800"&gt;
+&lt;p class="photoCaption"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;My rule of thumb is that anyone who
+  says &#x201C;we were successful because we were on-time and on-budget&#x201D; is 
+  thinking in terms of predictive planning, even if they are following an
+  iterative process, and thus is not thinking with an agile mindset.
+  In the agile world, success is all about business value - regardless of what
+  was written in a plan months ago. Plans are made, but updated regularly. They guide
+  decisions on what to do next, but are not used as a success measure.&lt;/p&gt;
+
+&lt;div class="footnote-list"&gt;
+&lt;h2&gt;Notes&lt;/h2&gt;
+
+&lt;div class="footnote-list-item" id="footnote-royce-discuss"&gt;
+&lt;p&gt;&lt;span class="num"&gt;1: &lt;/span&gt;
+      There have been quite a few people seeking to interpret the Royce paper.
+      Some argue that his paper opposes waterfall, pointing out that the
+      paper discusses flaws in the kind of process suggested by the figure 2
+      that I've quoted here. Certainly he does discuss flaws, but he also says
+      the illustrated approach is "fundamentally sound". Certainly this
+      activity-based decomposition of projects became the accepted model in the
+      decades that followed.
+    &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="footnote-list-item" id="footnote-rigid"&gt;
+&lt;p&gt;&lt;span class="num"&gt;2: &lt;/span&gt;
+      This leads to another common characteristic that goes with the term
+      &#x201C;waterfall&#x201D; - rigid processes that tell everyone in detail what they
+      should do. Certainly the software process folks in the 90s were keen on
+      coming up with prescriptive methods, but such prescriptive thinking also
+      affected many who advocated iterative techniques. Indeed although agile
+      methods explicitly disavow &lt;a href="/articles/newMethodology.html#PuttingPeopleFirst"&gt;this kind of Taylorist
+      thinking&lt;/a&gt;, I often hear of &lt;a href="/articles/agile-aus-2018.html"&gt;faux-agile&lt;/a&gt;
+      initiatives following this route.
+    &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="footnote-list-item" id="footnote-iteration"&gt;
+&lt;p&gt;&lt;span class="num"&gt;3: &lt;/span&gt;
+      The notion that a phase should be finished before the next one is started
+      is a convenient fiction. Even the most eager waterfall
+      proponent would agree that some rework on prior stages is necessary in
+      practice, although I think most would say that if executed perfectly, each
+      activity wouldn't need rework. Royce's paper explicitly discussed how
+      iteration was expected between adjacent steps (eg Analysis and Program
+      Design in his figure). However Royce argued that longer backtracks (eg
+      between Program Design and Testing) were a serious problem.
+    &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="footnote-list-item" id="footnote-suitable"&gt;
+&lt;p&gt;&lt;span class="num"&gt;4: &lt;/span&gt;
+      This does raise the question of whether there are contexts where
+      the waterfall style is actually better than the iterative one. In theory,
+      waterfall might well work better in situations where there was a deep
+      understanding of the requirements, and the technologies being used - and
+      neither of those things would significantly change during the life of the
+      product. I say "in theory" because I've not come across such a
+      circumstance, so I can't judge if waterfall would be appropriate in
+      practice. And even then I'd be reluctant to follow the waterfall style for
+      the later phases (code-test-integrate) as I've found so much value in
+      interleaving testing with coding while doing continuous integration..
+    &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="footnote-list-item" id="footnote-oo-iterative"&gt;
+&lt;p&gt;&lt;span class="num"&gt;5: &lt;/span&gt;
+      In the 90s it was generally accepted in the object-oriented world that
+      waterfall was a bad idea and should  be replaced with an iterative style.
+      However I don't think there was the degree of embracing changing
+      requirements that appeared with the agile community.
+    &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="acknowledgements"&gt;
+&lt;h2&gt;Acknowledgements&lt;/h2&gt;
+
+&lt;p&gt;My thanks to
+
+    Ben Noble, Clare Sudbury, David Johnston, Karl Brown, Kyle Hodgson, Pramod Sadalage, Prasanna Pendse, Rebecca Parsons, Sriram Narayan, Sriram Narayanan, Tiago Griffo, Unmesh Joshi, and Vidhyalakshmi
+    Narayanaswamy
+
+
+    who discussed drafts of this post on our internal
+    mailing list. &lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+
+<entry>
+    <title>photostream 122</title>
+    <link href="https://martinfowler.com/photos/122.html"/>
+    <updated>2019-10-27T21:02:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-10-27:photostream-122</id>
+    <category term="photostream"/>
+    <content type="html">
+&lt;p&gt;&lt;a href = 'https://martinfowler.com/photos/122.html'&gt;&lt;img src = 'https://martinfowler.com/photos/122.jpg'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;St Agnes, UK (2018)&lt;/p&gt;
+</content>
+  </entry>
+
+<entry>
+    <title>Using CD4ML to evolve without bias</title>
+    <link href="https://martinfowler.com/articles/cd4ml.html#PlatformThinking"/>
+    <updated>2019-09-19T09:13:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-09-19:Using-CD4ML-to-evolve-without-bias</id>
+    <category term="skip-home-page"/>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/cd4ml.html#PlatformThinking'&gt;&lt;img src = 'https://martinfowler.com/articles/cd4ml/card.png' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Danilo, Arif and Christoph finish their article on Continuous Delivery
+      for Machine Learning with a peek at the future of platform thinking and
+      how we might use CD4ML to help evolve intelligent systems without bias.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/cd4ml.html#PlatformThinking'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>Data Versioning and Pipelines in CD4ML</title>
+    <link href="https://martinfowler.com/articles/cd4ml.html#WhereDoWeGoFromHere"/>
+    <updated>2019-09-18T09:44:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-09-18:Data-Versioning-and-Pipelines-in-CD4ML</id>
+    <category term="skip-home-page"/>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/cd4ml.html#WhereDoWeGoFromHere'&gt;&lt;img src = 'https://martinfowler.com/articles/cd4ml/card.png' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;My colleagues continue their article on Continuous Delivery for Machine
+     Learning by looking at the future, considering what further work needs to
+     be done in Data Versioning and Data Pipelines.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/cd4ml.html#WhereDoWeGoFromHere'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>Orchestration and Observability in CD4ML</title>
+    <link href="https://martinfowler.com/articles/cd4ml.html#ContinuousDeliveryOrchestration"/>
+    <updated>2019-09-11T09:43:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-09-11:Orchestration-and-Observability-in-CD4ML</id>
+    <category term="skip-home-page"/>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/cd4ml.html#ContinuousDeliveryOrchestration'&gt;&lt;img src = 'https://martinfowler.com/articles/cd4ml/card.png' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Danilo, Arif and Christoph finish the technical components of
+      Continuous Delivery for Machine Learning with the last two items:
+      Continuous Delivery Orchestration, and Model Monitoring and Observability &lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/cd4ml.html#ContinuousDeliveryOrchestration'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>Experiments Tracking and Model Deployment in CD4ML</title>
+    <link href="https://martinfowler.com/articles/cd4ml.html#ExperimentsTracking"/>
+    <updated>2019-09-09T10:37:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-09-09:Experiments-Tracking-and-Model-Deployment-in-CD4ML</id>
+    <category term="skip-home-page"/>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/cd4ml.html#ExperimentsTracking'&gt;&lt;img src = 'https://martinfowler.com/articles/cd4ml/card.png' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;The team finishes the technical components of
+      Continuous Delivery for Machine Learning. This time they look at
+      Experiments Tracking and Model Deployment. &lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/cd4ml.html#ExperimentsTracking'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>The actual cost of lock-in and how to reduce it</title>
+    <link href="https://martinfowler.com/articles/oss-lockin.html#TheTotalCostOfAvoidingLock-in"/>
+    <updated>2019-09-09T10:20:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-09-09:The-actual-cost-of-lock-in-and-how-to-reduce-it</id>
+    <category term="skip-home-page"/>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/oss-lockin.html#TheTotalCostOfAvoidingLock-in'&gt;&lt;img src = 'https://martinfowler.com/articles/oss-lockin/locks_card.jpg' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Gregor completes his article by totting up the total cost of avoiding
+      lock-in, and considering some examples of the decisions around lock-in.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/oss-lockin.html#TheTotalCostOfAvoidingLock-in'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>Serving and testing models in CD4ML</title>
+    <link href="https://martinfowler.com/articles/cd4ml.html#ModelServing"/>
+    <updated>2019-09-06T12:55:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-09-06:Serving-and-testing-models-in-CD4ML</id>
+    <category term="skip-home-page"/>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/cd4ml.html#ModelServing'&gt;&lt;img src = 'https://martinfowler.com/articles/cd4ml/card.png' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;My colleagues continue their discussion of the technical components of
+      Continuous Delivery for Machine Learning. This installment looks at model
+      serving, testing, and quality. &lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/cd4ml.html#ModelServing'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>Technical Components of CD4ML</title>
+    <link href="https://martinfowler.com/articles/cd4ml.html#TechnicalComponentsOfCd4ml"/>
+    <updated>2019-09-04T09:51:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-09-04:Technical-Components-of-CD4ML</id>
+    <category term="skip-home-page"/>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/cd4ml.html#TechnicalComponentsOfCd4ml'&gt;&lt;img src = 'https://martinfowler.com/articles/cd4ml/card.png' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Our authors now move on to the technical components that make
+      Continuous Delivery possible for a Machine Learning system. The first two
+      are "Discoverable and Accessible Data" followed by "Reproducible Model Training". &lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/cd4ml.html#TechnicalComponentsOfCd4ml'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>The actual cost of lock-in and how to reduce it</title>
+    <link href="https://martinfowler.com/articles/oss-lockin.html#TheActualCostOfLock-in"/>
+    <updated>2019-09-04T09:38:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-09-04:The-actual-cost-of-lock-in-and-how-to-reduce-it</id>
+    <category term="skip-home-page"/>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/oss-lockin.html#TheActualCostOfLock-in'&gt;&lt;img src = 'https://martinfowler.com/articles/oss-lockin/locks_card.jpg' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Since Gregor's previous matrix was so useful, now he does another one.
+      This matrix models switching costs and Gregor uses it to examine the actual
+      costs of lock-in.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/oss-lockin.html#TheActualCostOfLock-in'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>Continuous Delivery for Machine Learning</title>
+    <link href="https://martinfowler.com/articles/cd4ml.html"/>
+    <updated>2019-09-03T09:32:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-09-03:Continuous-Delivery-for-Machine-Learning</id>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/cd4ml.html'&gt;&lt;img src = 'https://martinfowler.com/articles/cd4ml/card.png' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Machine Learning applications are becoming popular in our industry, but
+      teams struggle to develop, test, deploy them. At ThoughtWorks, we've
+      gained great benefits from Continuous Delivery, so we naturally endeavored
+      to apply this technique to our machine learning applications. Three of our
+      senior technologists doing this work &amp;#x2014; Danilo Sato,
+      Arif Wider and Christoph Windheuser &amp;#x2014; have written up what they've learned so far.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/cd4ml.html'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>A model for thnking about lock-in</title>
+    <link href="https://martinfowler.com/articles/oss-lockin.html#MakingBetterDecisionsUsingModels"/>
+    <updated>2019-09-02T10:22:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-09-02:A-model-for-thnking-about-lock-in</id>
+    <category term="skip-home-page"/>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/oss-lockin.html#MakingBetterDecisionsUsingModels'&gt;&lt;img src = 'https://martinfowler.com/articles/oss-lockin/locks_card.jpg' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Gregor continues his article on lock-in by introducing a model, a
+      quadrant based on switching cost and unique utility, to aid thinking. &lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/oss-lockin.html#MakingBetterDecisionsUsingModels'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>Don't get locked up into avoiding lock-in</title>
+    <link href="https://martinfowler.com/articles/oss-lockin.html"/>
+    <updated>2019-08-29T09:49:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-08-29:Don-t-get-locked-up-into-avoiding-lock-in</id>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/oss-lockin.html'&gt;&lt;img src = 'https://martinfowler.com/articles/oss-lockin/locks_card.jpg' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;A lot of software architects expend time and energy trying to come up
+      with ways to avoid lock-in. Sadly many of these discussions miss important
+      elements of how lock-in works - it's certainly not a simple binary switch.
+      &lt;a href = 'https://twitter.com/ghohpe'&gt;Gregor Hohpe&lt;/a&gt;, who's probably
+      spent more time in such meetings than he'd like to admit, has written what
+      I think will be an essential article on the topic. This first installment
+      looks at the different varieties of lock-in.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/oss-lockin.html'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>Writing Guide Pages</title>
+    <link href="https://martinfowler.com/articles/201908-guides.html"/>
+    <updated>2019-08-27T10:04:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-08-27:Writing-Guide-Pages</id>
+    <content type="html">
+&lt;p&gt;In the last few months I've been working on improving the browsability
+      of the site. This has included a graphic redesign, but the main element
+      has been rewriting the guide pages that outline the articles on the site
+      on a particular topic.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/201908-guides.html'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>photostream 121</title>
+    <link href="https://martinfowler.com/photos/121.html"/>
+    <updated>2019-06-20T18:12:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-06-20:photostream-121</id>
+    <category term="photostream"/>
+    <content type="html">
+&lt;p&gt;&lt;a href = 'https://martinfowler.com/photos/121.html'&gt;&lt;img src = 'https://martinfowler.com/photos/121.jpg'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Plitvice, Croatia (2018)&lt;/p&gt;
+</content>
+  </entry>
+
+<entry>
+    <title>Downsides of micro frontends</title>
+    <link href="https://martinfowler.com/articles/micro-frontends.html#Downsides"/>
+    <updated>2019-06-19T10:02:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-06-19:Downsides-of-micro-frontends</id>
+    <category term="skip-home-page"/>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/micro-frontends.html#Downsides'&gt;&lt;img src = 'https://martinfowler.com/articles/micro-frontends/card.png#Downsides' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Any significant architectural pattern has downsides. Cam finishes his
+      explanation of micro frontends by looking at some of the costs of this
+      approach, such as payload size and complexity in operations and governance.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/micro-frontends.html#Downsides'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>An example of a micro frontend application</title>
+    <link href="https://martinfowler.com/articles/micro-frontends.html#TheExampleInDetail"/>
+    <updated>2019-06-17T08:13:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-06-17:An-example-of-a-micro-frontend-application</id>
+    <category term="skip-home-page"/>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/micro-frontends.html#TheExampleInDetail'&gt;&lt;img src = 'https://martinfowler.com/articles/micro-frontends/card.png#TheExampleInDetail' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;After all the theory about micro frontends, Cam now digs into an
+      example of how JavaScript integration can work with a simple
+      application.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/micro-frontends.html#TheExampleInDetail'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>Implementation issues with micro frontends</title>
+    <link href="https://martinfowler.com/articles/micro-frontends.html#Styling"/>
+    <updated>2019-06-13T09:23:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-06-13:Implementation-issues-with-micro-frontends</id>
+    <category term="skip-home-page"/>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/micro-frontends.html#Styling'&gt;&lt;img src = 'https://martinfowler.com/articles/micro-frontends/card.png#Styling' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Cam now looks at various issues that need to be considered to make this
+      whole approach work. How to achieve coherent styling, dealing with shared
+      components, inter-application communications and how to test it all.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/micro-frontends.html#Styling'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>Integration approaches for micro frontends</title>
+    <link href="https://martinfowler.com/articles/micro-frontends.html#IntegrationApproaches"/>
+    <updated>2019-06-11T08:38:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-06-11:Integration-approaches-for-micro-frontends</id>
+    <category term="skip-home-page"/>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/micro-frontends.html#IntegrationApproaches'&gt;&lt;img src = 'https://martinfowler.com/articles/micro-frontends/card.png#IntegrationApproaches' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Cam moves on from the benefits of micro frontends to look at different
+      ways of implementing them. He covers server-side
+      template composition, build-time integration, and run-time integration via
+      iframes, JavaScript, and Web Components&lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/micro-frontends.html#IntegrationApproaches'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>Micro Frontends</title>
+    <link href="https://martinfowler.com/articles/micro-frontends.html"/>
+    <updated>2019-06-10T12:25:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-06-10:Micro-Frontends</id>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/micro-frontends.html'&gt;&lt;img src = 'https://martinfowler.com/articles/micro-frontends/card.png' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Recent years have seen an explosion of interest in the microservices
+      architectural style, which has become popular due to its ability to allow
+      customer-oriented teams to build and deploy software independently. A
+      common problem such teams face, however, is how to integrate their work
+      into the user-interface, since these are often monolithic frontend
+      codebases. &lt;/p&gt;
+
+&lt;p&gt;It should be no surprise that an approach to handle this has
+      developed that's called micro frontends, which allows teams to
+      independently deploy their user-interface into skeletal front end
+      application. My colleague, Cam Jackson, has been using this approach and
+      has pulled together an article to explain further why and how to do this.
+      It digs into the benefits and downsides of the approach, implementation
+      approaches, and a small but detailed example.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/micro-frontends.html'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>Is High Quality Software Worth the Cost?</title>
+    <link href="https://martinfowler.com/articles/is-quality-worth-cost.html"/>
+    <updated>2019-05-29T10:38:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-05-29:Is-High-Quality-Software-Worth-the-Cost-</id>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/is-quality-worth-cost.html'&gt;&lt;img src = 'https://martinfowler.com/articles/is-quality-worth-cost/card.png' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;A common debate in software development projects is between spending
+      time on improving the quality of the software versus concentrating on
+      releasing more valuable features. Usually the pressure to deliver
+      functionality dominates the discussion, leading many developers to
+      complain that they don't have time to work on architecture and code
+      quality. But the counter-intuitive reality is that internal software
+      quality removes the cruft that slows down developing new features, thus
+      decreasing the cost of enhancing the software. &lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/is-quality-worth-cost.html'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>Bliki: TechnicalDebt</title>
+    <link href="https://martinfowler.com/bliki/TechnicalDebt.html"/>
+    <updated>2019-05-21T11:59:00-04:00</updated>
+    <id>https://martinfowler.com/bliki/TechnicalDebt.html</id>
+    <category term="bliki"/>
+    <content type="html">
+&lt;p&gt;Software systems are prone to the build up of &lt;b&gt;cruft&lt;/b&gt; - deficiencies in
+  internal quality that make it harder than it would ideally be to modify and
+  extend the system further. Technical Debt is a metaphor, coined by Ward
+  Cunningham, that frames how to think about dealing with this cruft, thinking
+  of it like a financial debt. The extra effort that it takes to add new
+  features is the interest paid on the debt.&lt;/p&gt;
+
+&lt;div class="fullPhoto "&gt;&lt;img src="https://martinfowler.com/bliki/images/tech-debt/sketch.png"&gt;
+&lt;p class="photoCaption"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="clear"&gt;&lt;/div&gt;
+
+&lt;p&gt;Imagine I have a confusing module structure in my code base. I need to add
+  a new feature. If the module structure was clear, then it would take
+  me four days to add the feature but with this cruft, it takes me six
+  days. The two day difference is the interest on the debt.&lt;/p&gt;
+
+&lt;p&gt;What most appeals to me about the debt metaphor is how it frames how I  think
+  about how to deal with this cruft. I could take five days to clean up the modular
+  structure, removing that cruft, metaphorically paying off the principal. If I
+  only do it for this one feature, that's no gain, as I'd take nine days
+  instead of six. But if I have two more similar features coming up, then I'll
+  end up faster by removing the cruft first.&lt;/p&gt;
+
+&lt;p&gt;Stated like that, this sounds like a simple matter of working the numbers,
+  and any manager with a spreadsheet should figure out the choices. Sadly since
+  we &lt;a href="/bliki/CannotMeasureProductivity.html"&gt;CannotMeasureProductivity&lt;/a&gt;, none of these costs are objectively
+  measurable. We can &lt;i&gt;estimate&lt;/i&gt; how long it takes to do a feature,
+  &lt;i&gt;estimate&lt;/i&gt; what it might be like if the cruft was removed, and
+  &lt;i&gt;estimate&lt;/i&gt; the cost of removing the cruft. But our accuracy of such
+  estimates is pretty low. &lt;/p&gt;
+
+&lt;p&gt;Given this, usually the best route is to do what we usually do with
+  financial debts, pay the principal off gradually. On the first feature
+  I'll spend an extra couple of days to remove some of the cruft. That may
+  be enough to reduce the interest rate on future enhancements to a single
+  day. That's still going to take extra time, but by removing the cruft I'm
+  making it cheaper for future changes to this code. The great benefit of
+  gradual improvement like this is that it naturally means we spend more
+  time on removing cruft in those areas that we modify frequently, which are
+  exactly those areas of the code base where we most need the cruft to be
+  removed.&lt;/p&gt;
+
+&lt;p&gt;Thinking of this as paying interest versus paying of principal can help
+  decide which cruft to tackle. If I have a terrible area of the code base,
+  one that's a nightmare to change, it's not a problem if I don't have to
+  modify it. I only trigger an interest payment when I have to work
+  with that part of the software (this is a place where the metaphor breaks down, since
+  financial interest payments are triggered by the passage of time). So crufty but stable areas of code can
+  be left alone. In contrast, areas of high activity need a
+  zero-tolerance attitude to cruft, because the interest payments are
+  cripplingly high. This is especially important since cruft
+  accumulates where developers make changes without paying attention to
+  internal quality - the more changes, the greater risk of cruft building
+  up.&lt;/p&gt;
+
+&lt;p&gt;The metaphor of debt is sometimes used to justify neglecting internal quality.
+  The argument is that it takes time and effort to stop cruft from building up.
+  If there new features that are needed urgently, then perhaps it's best to take
+  on the debt, accepting that this debt will have to be managed in the future.&lt;/p&gt;
+
+&lt;p&gt;The danger here is that most of the time this analysis isn't done well.
+  Cruft has a quick impact, slowing down the very new features that are needed
+  quickly.  Teams who do this
+  end up maxing out all their credit cards, but still delivering later than they
+  would have done had they put the effort into higher internal quality. Here the metaphor
+  often leads people astray, as the dynamics don't really match those for financial
+  loans. Taking on debt to speed delivery only works if you stay below the
+  design payoff line of the &lt;a href="/bliki/DesignStaminaHypothesis.html"&gt;DesignStaminaHypothesis&lt;/a&gt;, and teams hit
+  that line in weeks rather than months.&lt;/p&gt;
+
+&lt;p&gt;There are regular debates whether different kinds of cruft should be
+  considered as debt or not. I found it useful to think about whether the debt
+  is acquired deliberately and whether it is prudent or reckless - leading me to
+  the &lt;a href="/bliki/TechnicalDebtQuadrant.html"&gt;TechnicalDebtQuadrant&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class="appendix"&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="furtherReading"&gt;
+&lt;h2&gt;Further Reading&lt;/h2&gt;
+
+&lt;p&gt;As far as I can tell, Ward first introduced this concept in an experience
+    report for &lt;a href="http://c2.com/doc/oopsla92.html"&gt;OOPSLA 1992&lt;/a&gt;. It has
+    also been discussed on the &lt;a href="http://www.c2.com/cgi/wiki?ComplexityAsDebt"&gt;wiki&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ward Cunningham has a &lt;a href="http://www.youtube.com/watch?v=pqeJFYwnkjE"&gt;video talk&lt;/a&gt; where he
+    discusses this metaphor he created.&lt;/p&gt;
+
+&lt;p&gt;Dave Nicolette expands on Ward's view of technical debt with a &lt;a href="http://neopragma.com/index.php/2019/03/30/technical-debt-the-man-the-metaphor-the-message/"&gt;fine
+    case study&lt;/a&gt; of what I refer to as &lt;a href="/bliki/TechnicalDebtQuadrant.html"&gt;
+    Prudent Intentional debt&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A couple of readers sent in some similarly good names. David
+Panariti refers to ugly programming as &lt;b&gt;deficit programming&lt;/b&gt;.
+Apparently he originally started using a few years ago when it fitted
+in with government policy; I suppose it's natural again now. &lt;/p&gt;
+
+&lt;p&gt;Scott Wood suggested "&lt;b&gt;Technical Inflation&lt;/b&gt; could be
+viewed as the ground lost when the current level of technology
+surpasses that of the foundation of your product to the extent that it
+begins losing compatibility with the industry.   Examples of this
+would be falling behind in versions of a language to the point where
+your code is no longer compatible with main stream compilers." &lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://www.construx.com/10x_Software_Development/Technical_Debt/"&gt;Steve McConnell&lt;/a&gt; brings out several good points in the metaphor,
+    particularly how keeping your unintended debt down gives you more
+    room to intentionally take on debt when it's useful to do so. I
+    also like his notion of minimum payments (which are very high to
+    fix issues with embedded systems as opposed to web sites).&lt;/p&gt;
+
+&lt;p&gt;Aaron Erickson talks about &lt;a href="http://www.informit.com/articles/article.aspx?p=1401640"&gt;Enron
+    financing&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://blog.crisp.se/2013/10/11/henrikkniberg/good-and-bad-technical-debt"&gt;Henrik Kniberg argues&lt;/a&gt; that it's older technical debt that
+    causes the greatest problem and that it's wise to a qualitative
+    debt ceiling to help manage it.&lt;/p&gt;
+
+&lt;p&gt; Erik Dietrich discusses the &lt;a href="http://www.daedtech.com/human-cost-tech-debt/"&gt;human cost of technical debt&lt;/a&gt;: team
+    infighting, atrophied skills, and attrition. &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="revisions"&gt;
+&lt;h2&gt;Revisions&lt;/h2&gt;
+
+&lt;p&gt;I originally published this post on October 1 2003. I gave it a thorough
+    rewrite in April 2019.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+
+<entry>
+    <title>Self-serve data platform</title>
+    <link href="https://martinfowler.com/articles/data-monolith-to-mesh.html#DataAndSelf-servePlatformDesignConvergence"/>
+    <updated>2019-05-20T09:13:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-05-20:Self-serve-data-platform</id>
+    <category term="skip-home-page"/>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/data-monolith-to-mesh.html#DataAndSelf-servePlatformDesignConvergence'&gt;&lt;img src = 'https://martinfowler.com/articles/data-monolith-to-mesh/data-infra.png' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;One of the main concerns of distributing the ownership of data to the
+      domains is the duplicated effort and skills required to operate the data
+      pipelines technology stack and infrastructure in each domain. Luckily,
+      building common infrastructure as a platform is a well understood and
+      solved problem; though admittedly the tooling and techniques are not as
+      mature in the data ecosystem.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/data-monolith-to-mesh.html#DataAndSelf-servePlatformDesignConvergence'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>Product thinking in a data platform</title>
+    <link href="https://martinfowler.com/articles/data-monolith-to-mesh.html#DataAndProductThinkingConvergence"/>
+    <updated>2019-05-16T09:14:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-05-16:Product-thinking-in-a-data-platform</id>
+    <category term="skip-home-page"/>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/data-monolith-to-mesh.html#DataAndProductThinkingConvergence'&gt;&lt;img src = 'https://martinfowler.com/articles/data-monolith-to-mesh/data-product.png' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Distribution of the data ownership and data pipeline implementation
+      into the hands of the business domains raise an important concern around
+      accessibility, usability and harmonization of distributed datasets. Zhamak
+      explains that this is where the learning in applying product thinking and
+      ownership of data assets come in handy.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/data-monolith-to-mesh.html#DataAndProductThinkingConvergence'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>Domain-driven data architecture</title>
+    <link href="https://martinfowler.com/articles/data-monolith-to-mesh.html#TheNextEnterpriseDataPlatformArchitecture"/>
+    <updated>2019-05-14T09:18:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-05-14:Domain-driven-data-architecture</id>
+    <category term="skip-home-page"/>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/data-monolith-to-mesh.html#TheNextEnterpriseDataPlatformArchitecture'&gt;&lt;img src = 'https://martinfowler.com/articles/data-monolith-to-mesh/card.png' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Zhamak explains the first part of the data mesh concept - using the
+      ideas behind Domain-Driven Design to structure the data platform.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/data-monolith-to-mesh.html#TheNextEnterpriseDataPlatformArchitecture'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>How to Move Beyond a Monolithic Data Lake to a Distributed Data Mesh</title>
+    <link href="https://martinfowler.com/articles/data-monolith-to-mesh.html"/>
+    <updated>2019-05-13T13:37:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-05-13:How-to-Move-Beyond-a-Monolithic-Data-Lake-to-a-Distributed-Data-Mesh</id>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/data-monolith-to-mesh.html'&gt;&lt;img src = 'https://martinfowler.com/articles/data-monolith-to-mesh/card.png' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Many enterprises are investing in a centralized data platform to
+      provide support for business insights and (hopefully) automated decision
+      making. Having worked with several of these organizations, my colleague &lt;a href = 'https://twitter.com/zhamakd'&gt;Zhamak Dehghani&lt;/a&gt; feels there are
+      fundamental problems with this common approach. These demand a shift to a
+      more decentralized approach that draws from modern distributed
+      architecture - which she refers to as a &lt;i&gt;data mesh&lt;/i&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/data-monolith-to-mesh.html'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>photostream 120</title>
+    <link href="https://martinfowler.com/photos/120.html"/>
+    <updated>2019-04-18T18:47:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-04-18:photostream-120</id>
+    <category term="photostream"/>
+    <content type="html">
+&lt;p&gt;&lt;a href = 'https://martinfowler.com/photos/120.html'&gt;&lt;img src = 'https://martinfowler.com/photos/120.jpg'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Dubrovnik, Croatia (2018)&lt;/p&gt;
+</content>
+  </entry>
+
+<entry>
+    <title>Lamenting the passing of the Golden Age of presentation visuals</title>
+    <link href="https://martinfowler.com/articles/201904-end-golden-age.html"/>
+    <updated>2019-04-11T09:44:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-04-11:Lamenting-the-passing-of-the-Golden-Age-of-presentation-visuals</id>
+    <content type="html">
+&lt;p&gt;For a few years it was easy to give a talk with a visual accompaniment
+      driven by my laptop next to me. But recently it's getting harder to do
+      this, making me wonder if I should continue designing visuals at all.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/201904-end-golden-age.html'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+<entry>
+    <title>Other implementations for domain-oriented observability</title>
+    <link href="https://martinfowler.com/articles/domain-oriented-observability.html#AlternativeImplementations"/>
+    <updated>2019-04-09T10:27:00-04:00</updated>
+    <id>tag:martinfowler.com,2019-04-09:Other-implementations-for-domain-oriented-observability</id>
+    <category term="skip-home-page"/>
+    <content type="html">
+&lt;div class = 'img'&gt;&lt;a href = 'https://martinfowler.com/articles/domain-oriented-observability.html#AlternativeImplementations'&gt;&lt;img src = 'https://martinfowler.com/articles/domain-oriented-observability/twitter-card.png' width = '350px'&gt;&lt;/img&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Pete completes his discussion of domain-oriented observability by
+      comparing domain probes to using events and aspect-oriented programming&lt;/p&gt;
+
+&lt;p&gt;&lt;a class = 'more' href = 'https://martinfowler.com/articles/domain-oriented-observability.html#AlternativeImplementations'&gt;more&#x2026;&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+
+</feed>
