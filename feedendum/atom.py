@@ -44,9 +44,8 @@ def parse_url(url, **extra) -> Feed:
             "No module named 'requests' found, please install it to use this feature"
         )
     r = requests.get(url)
-    if r.status_code == requests.codes.ok:
-        return parse_text(r.text)
-    raise RemoteFeedError("Status code {} != {}".format(r.status_code, requests.codes.ok))
+    r.raise_for_status()
+    return parse_text(r.text)
 
 
 def parse_iso_datetime(elem: ET.Element, name: str) -> Optional[dt]:

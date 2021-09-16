@@ -1,5 +1,5 @@
 from datetime import datetime as dt
-from email.utils import parsedate_to_datetime, format_datetime
+from email.utils import format_datetime, parsedate_to_datetime
 from typing import Optional
 
 import lxml.etree as ET
@@ -8,11 +8,11 @@ from .exceptions import FeedParseError, FeedXMLError, RemoteFeedError
 from .feed import Feed, FeedItem
 from .utils import (
     NS,
+    add_content_element,
     add_text_element,
+    dict_append_etree,
     etree_to_dict,
     get_text,
-    dict_append_etree,
-    add_content_element,
 )
 
 try:
@@ -43,9 +43,8 @@ def parse_url(url, **extra) -> Feed:
             "No module named 'requests' found, please install it to use this feature"
         )
     r = requests.get(url)
-    if r.status_code == requests.codes.ok:
-        return parse_text(r.text)
-    raise RemoteFeedError("Status code {} != {}".format(r.status_code, requests.codes.ok))
+    r.raise_for_status()
+    return parse_text(r.text)
 
 
 def parse_rfc2822_datetime(elem: ET.Element, name: str) -> Optional[dt]:
