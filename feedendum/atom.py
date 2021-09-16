@@ -11,7 +11,9 @@ from .utils import (
     add_text_element,
     dict_append_etree,
     etree_to_dict,
+    get_attribute,
     get_text,
+    set_attribute,
 )
 
 try:
@@ -82,6 +84,7 @@ def to_feed(root) -> Feed:
                 break
         fitem.title = get_text(item, "atom:title")
         fitem.id = get_text(item, "atom:id")
+        fitem.content_type = get_attribute(item, "atom:content", "type")
         fitem.content = get_text(item, "atom:content")
         fitem.update = parse_iso_datetime(item, "atom:updated") or parse_iso_datetime(
             item, "atom:published"
@@ -116,7 +119,8 @@ def generate(feed):
         if fitem.url:
             elink = ET.SubElement(entry, f"{ns}link")
             elink.set("href", fitem.url)
-        add_content_element(entry, f"{ns}content", fitem.content)
+        elem = add_content_element(entry, f"{ns}content", fitem.content)
+        set_attribute(elem, "type", fitem.content_type)
         for fcategory in fitem.categories:
             elink = ET.SubElement(entry, f"{ns}category")
             elink.set("term", fcategory)

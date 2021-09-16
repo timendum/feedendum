@@ -25,6 +25,8 @@ class AtomTest(unittest.TestCase):
         self.assertIsInstance(feed.items[0].update, dt)
         self.assertIsInstance(feed.items[0]._data, dict)
         self.assertIsInstance(feed.items[0].categories, list)
+        self.assertNotEqual(feed.items[0].content, None)
+        self.assertNotEqual(feed.items[0].content_type, None)
         self.assertTrue(len(feed.items[0].categories) > 0)
         self.assertEqual(feed.items[0].categories[0], "bliki")
 
@@ -96,3 +98,6 @@ class AtomTest(unittest.TestCase):
         feed = Feed(title="Bad\u0008Char")
         xml = atom.generate(feed)
         self.assertNotIn("\u0008", xml)
+
+if __name__ == '__main__':
+    unittest.main()

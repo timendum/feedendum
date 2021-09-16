@@ -44,6 +44,7 @@ class FeedItem:
 
     def __init__(self, **kwargs):
         self.content = None  # type: Optional[str]
+        self.content_type = None  # type: Optional[str]
         self.title = None  # type: Optional[str]
         self.url = None  # type: Optional[str]
         self.id = None  # type: Optional[str]

@@ -22,7 +22,7 @@ _NON_PRINTABLE_C0 = itertools.chain(range(0x00, 0x09), range(0x0B, 0x0D), range(
 _TRANSLATE_MAP = {c: None for c in _NON_PRINTABLE_C0}
 
 
-def get_text(element: Element, name) -> Optional[str]:
+def get_text(element: Element, name: str) -> Optional[str]:
     child = element.find(name, namespaces=NS)
     if child is None:
         return None
@@ -30,6 +30,15 @@ def get_text(element: Element, name) -> Optional[str]:
         return None
     child.getparent().remove(child)
     return child.text.strip()
+
+
+def get_attribute(element: Element, name: str, attribute: str) -> Optional[str]:
+    child = element.find(name, namespaces=NS)
+    if child is None:
+        return None
+    if attribute not in child.attrib:
+        return None
+    return child.attrib[attribute].strip()
 
 
 def add_text_element(
@@ -56,6 +65,11 @@ def add_content_element(root: Element, name: str, text: Optional[str]) -> Option
             elem.text = text
         return elem
     return None
+
+
+def set_attribute(element: Element, attribute: str, value: Optional[str]) -> None:
+    if element is not None and attribute and value:
+        element.attrib[attribute] = value
 
 
 def etree_to_dict(t):
