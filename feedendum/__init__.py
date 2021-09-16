@@ -1,16 +1,13 @@
 from .__version__ import __version__
-from .rss import (
-    parse_file as from_rss_file,
-    parse_url as from_rss_url,
-    parse_text as from_rss_text,
-    generate as to_rss_string,
-)
-from .atom import (
-    parse_file as from_atom_file,
-    parse_url as from_atom_url,
-    parse_text as from_atom_text,
-    generate as to_atom_string,
-)
+from .atom import generate as to_atom_string
+from .atom import parse_file as from_atom_file
+from .atom import parse_text as from_atom_text
+from .atom import parse_url as from_atom_url
+from .feed import Feed, FeedItem
+from .rss import generate as to_rss_string
+from .rss import parse_file as from_rss_file
+from .rss import parse_text as from_rss_text
+from .rss import parse_url as from_rss_url
 
 __all__ = [
     "rss",
@@ -24,4 +21,6 @@ __all__ = [
     "from_atom_text",
     "to_rss_string",
     "to_atom_string",
+    "Feed",
+    "FeedItem",
 ]
