@@ -28,6 +28,7 @@ class RssTest(unittest.TestCase):
         )
         self.assertIsInstance(feed.items[0].update, dt)
         self.assertIsInstance(feed.items[0]._data, dict)
+        self.assertIn('comments', feed.items[0]._data)
 
     def test_parse_string(self):
         feed = rss.parse_text(
@@ -64,6 +65,7 @@ class RssTest(unittest.TestCase):
         self.assertEqual(feed.description, None)
         self.assertIsInstance(feed.update, dt)
         self.assertIsInstance(feed._data, dict)
+        self.assertIn('language', feed._data)
         self.assertIsInstance(feed.items, list)
         self.assertTrue(len(feed.items) > 0)
         self.assertEqual(feed.items[0].title, None)
@@ -112,3 +114,6 @@ class RssTest(unittest.TestCase):
         feed = Feed(title="Bad\u001AChar")
         xml = rss.generate(feed)
         self.assertNotIn("\u001A", xml)
+
+if __name__ == '__main__':
+    unittest.main()

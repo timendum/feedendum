@@ -14,6 +14,7 @@ class AtomTest(unittest.TestCase):
         self.assertEqual(feed.description, "Master feed of news and updates from martinfowler.com")
         self.assertIsInstance(feed.update, dt)
         self.assertIsInstance(feed._data, dict)
+        self.assertIn('{http://www.w3.org/2005/Atom}author', feed._data)
         self.assertIsInstance(feed.items, list)
         self.assertTrue(len(feed.items) > 1)
         self.assertEqual(feed.items[0].title, "Bliki: ExploratoryTesting")
@@ -45,6 +46,7 @@ class AtomTest(unittest.TestCase):
     <id>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a</id>
     <updated>2003-12-13T18:30:02Z</updated>
     <summary>Some text.</summary>
+    <extra>An extra</extra>
   </entry>
 
 </feed>"""
@@ -63,6 +65,7 @@ class AtomTest(unittest.TestCase):
         self.assertEqual(feed.items[0].id, "urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a")
         self.assertIsInstance(feed.items[0].update, dt)
         self.assertIsInstance(feed.items[0]._data, dict)
+        self.assertIn('{http://www.w3.org/2005/Atom}extra', feed.items[0]._data)
 
     def test_generate(self):
         feed = atom.parse_file("tests/martinfowler.atom")
