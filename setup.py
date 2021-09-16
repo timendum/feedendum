@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-# Note: To use the 'upload' functionality of this file, you must:
-#   $ pipenv install twine --dev
-
 import io
 import os
 import sys
@@ -13,7 +7,7 @@ from setuptools import find_packages, setup, Command
 
 # Package meta-data.
 NAME = 'feedendum'
-DESCRIPTION = 'Utilities to handle rss, json and atom feeds'
+DESCRIPTION = 'Utilities to read and write RSS and Atom feeds.'
 URL = 'https://github.com/timendum/feedendum'
 EMAIL = 'timendum@gmail.com'
 AUTHOR = 'Timendum'
@@ -30,15 +24,9 @@ EXTRAS = {
     'http': ['requests'],
 }
 
-# The rest you shouldn't have to touch too much :)
-# ------------------------------------------------
-# Except, perhaps the License and Trove Classifiers!
-# If you do change the License, remember to change the Trove Classifier for that!
-
 here = os.path.abspath(os.path.dirname(__file__))
 
 # Import the README and use it as the long-description.
-# Note: this will only work if 'README.md' is present in your MANIFEST.in file!
 try:
     with io.open(os.path.join(here, 'README.md'), encoding='utf-8') as f:
         long_description = '\n' + f.read()
