@@ -9,7 +9,7 @@ from .atom import (
     parse_file as from_atom_file,
     parse_url as from_atom_url,
     parse_text as from_atom_text,
-    generate as to_string_string,
+    generate as to_atom_string,
 )
 
 __all__ = [
@@ -22,4 +22,6 @@ __all__ = [
     "from_atom_file",
     "from_atom_url",
     "from_atom_text",
+    "to_rss_string",
+    "to_atom_string",
 ]
