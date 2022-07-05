@@ -1,22 +1,19 @@
+import dataclasses
 import datetime
 from collections import OrderedDict
-from typing import Dict, List, Optional
+from typing import Optional
 
 
+@dataclasses.dataclass(kw_only=True)
 class Feed:
     """A single feed similar to an atom feed or a rss channel"""
 
-    def __init__(self, **kwargs):
-        self.description = None  # type: Optional[str]
-        self.title = None  # type: Optional[str]
-        self.url = None  # type: Optional[str]
-        self.update = None  # type: Optional[datetime.datetime]
-        self.items = []  # type: List[FeedItem]
-        self._data = {}  # type: Dict
-        allowed_keys = vars(self).keys()
-        for key, value in kwargs.items():
-            if key in allowed_keys:
-                setattr(self, key, value)
+    description: Optional[str] = None
+    title: Optional[str] = None
+    url: Optional[str] = None
+    update: Optional[datetime.datetime] = None
+    items: list["FeedItem"] = dataclasses.field(default_factory=list)
+    _data: dict = dataclasses.field(default_factory=dict)
 
     def __getattr__(self, name):
         return self._data[name]
@@ -39,22 +36,18 @@ class Feed:
         return "Feed({})".format(", ".join([f"{k}={v!r}" for k, v in vars(self).items() if v]))
 
 
+@dataclasses.dataclass(kw_only=True)
 class FeedItem:
     """A feed entry, similar to an atom entry or a rss item"""
 
-    def __init__(self, **kwargs):
-        self.content = None  # type: Optional[str]
-        self.content_type = None  # type: Optional[str]
-        self.title = None  # type: Optional[str]
-        self.url = None  # type: Optional[str]
-        self.id = None  # type: Optional[str]
-        self.update = None  # type: Optional[datetime.datetime]
-        self.categories = []  # type: List[str]
-        self._data = {}  # type: Dict
-        allowed_keys = vars(self).keys()
-        for key, value in kwargs.items():
-            if key in allowed_keys:
-                setattr(self, key, value)
+    content: Optional[str] = None
+    content_type: Optional[str] = None
+    title: Optional[str] = None
+    url: Optional[str] = None
+    id: Optional[str] = None
+    update: Optional[datetime.datetime] = None
+    categories: list[str] = dataclasses.field(default_factory=list)
+    _data: dict = dataclasses.field(default_factory=dict)
 
     def __getattr__(self, name):
         return self._data[name]

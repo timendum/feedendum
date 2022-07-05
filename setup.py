@@ -11,7 +11,7 @@ DESCRIPTION = 'Utilities to read and write RSS and Atom feeds.'
 URL = 'https://github.com/timendum/feedendum'
 EMAIL = 'timendum@gmail.com'
 AUTHOR = 'Timendum'
-REQUIRES_PYTHON = '>=3.7.0'
+REQUIRES_PYTHON = '>=3.10.0'
 VERSION = None
 
 # What packages are required for this module to be executed?

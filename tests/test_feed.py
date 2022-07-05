@@ -14,6 +14,10 @@ class FeedTest(unittest.TestCase):
         feed = Feed(title="Title")
         self.assertEqual(feed.title, "Title")
 
+    def test_init_catch(self):
+        with self.assertRaises(TypeError):
+            Feed(title="Title", dummy="Test")
+
     def test_repr(self):
         feed = Feed(title="Title")
         self.assertEqual(repr(feed), "Feed(title='Title')")
@@ -66,6 +70,10 @@ class FeedItemTest(unittest.TestCase):
     def test_init(self):
         feeditem = FeedItem(title="Title")
         self.assertEqual(feeditem.title, "Title")
+
+    def test_init_catch(self):
+        with self.assertRaises(TypeError):
+            FeedItem(title="Title", dummy="Test")
 
     def test_repr(self):
         feeditem = FeedItem(title="Title")
