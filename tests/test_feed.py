@@ -40,12 +40,38 @@ class FeedTest(unittest.TestCase):
         feed.items.append(FeedItem(url="a", update=dt(2001, 1, 2, 1, 0)))  # 4
         feed.items.append(FeedItem(url="4", update=dt(2001, 1, 1, 1, 0)))  # 1
         feed.items.append(FeedItem(url="3", update=dt(2001, 1, 1, 1, 2)))  # 2
-        feed.sort_items()
+        self.assertTrue(feed.sort_items())
         self.assertEqual(len(feed.items), 4)
         self.assertEqual(feed.items[0].url, "4")
         self.assertEqual(feed.items[1].url, "3")
         self.assertEqual(feed.items[2].url, "b")
         self.assertEqual(feed.items[3].url, "a")
+
+    def test_sort_items_custom(self):
+        feed = Feed()
+        feed.items.append(FeedItem(url="b", _data={"episode": "3"}))  # 3
+        feed.items.append(FeedItem(url="a", _data={"episode": "4"}))  # 4
+        feed.items.append(FeedItem(url="4", _data={"episode": "1"}))  # 1
+        feed.items.append(FeedItem(url="3", _data={"episode": "2"}))  # 2
+        self.assertTrue(feed.sort_items(key=lambda e: int(e._data["episode"])))
+        self.assertEqual(len(feed.items), 4)
+        self.assertEqual(feed.items[0].url, "4")
+        self.assertEqual(feed.items[1].url, "3")
+        self.assertEqual(feed.items[2].url, "b")
+        self.assertEqual(feed.items[3].url, "a")
+
+    def test_sort_items_no_custom(self):
+        feed = Feed()
+        feed.items.append(FeedItem(url="b"))  # 3
+        feed.items.append(FeedItem(url="a", _data={"episode": "4"}))  # 4
+        feed.items.append(FeedItem(url="4", _data={"episode": "1"}))  # 1
+        feed.items.append(FeedItem(url="3", _data={"episode": "2"}))  # 2
+        self.assertFalse(feed.sort_items(key=lambda e: int(e._data["episode"])))
+        self.assertEqual(len(feed.items), 4)
+        self.assertEqual(feed.items[0].url, "b")
+        self.assertEqual(feed.items[1].url, "a")
+        self.assertEqual(feed.items[2].url, "4")
+        self.assertEqual(feed.items[3].url, "3")
 
     def test_sort_items_no_date(self):
         feed = Feed()
@@ -53,7 +79,7 @@ class FeedTest(unittest.TestCase):
         feed.items.append(FeedItem(url="a", update=dt(2001, 1, 2, 1, 0)))  # 4
         feed.items.append(FeedItem(url="4", update=dt(2001, 1, 1, 1, 0)))  # 1
         feed.items.append(FeedItem(url="3", update=dt(2001, 1, 1, 1, 2)))  # 2
-        feed.sort_items()
+        self.assertFalse(feed.sort_items())
         self.assertEqual(len(feed.items), 4)
         self.assertEqual(feed.items[0].url, "b")
         self.assertEqual(feed.items[1].url, "a")

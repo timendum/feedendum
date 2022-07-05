@@ -25,12 +25,22 @@ class Feed:
         items = OrderedDict([item.url, item] for item in reversed(self.items))
         self.items = list(reversed(items.values()))
 
-    def sort_items(self):
-        """Order items by `update`, if every item has an `update` value."""
+    def sort_items(self, key=None) -> None:
+        """Order items by according to key or by `update`, if every item has an `update` value.
+        Returns `True` if sorted, `False` otherwise."""
+        if not key:
+
+            def key(i):
+                return i.update
+
         for item in self.items:
-            if not item.update:
-                return
-        self.items = sorted(self.items, key=lambda i: i.update)
+            try:
+                if not key(item):
+                    return False
+            except Exception:
+                return False
+        self.items = sorted(self.items, key=key)
+        return True
 
     def __repr__(self):
         return "Feed({})".format(", ".join([f"{k}={v!r}" for k, v in vars(self).items() if v]))
