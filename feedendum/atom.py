@@ -1,6 +1,8 @@
 from datetime import datetime as dt
 from typing import Optional
 
+from requests import HTTPError
+
 import lxml.etree as ET
 
 from .exceptions import FeedParseError, FeedXMLError, RemoteFeedError
@@ -44,7 +46,10 @@ def parse_url(url, **extra) -> Feed:
             "No module named 'requests' found, please install it to use this feature"
         )
     r = requests.get(url)
-    r.raise_for_status()
+    try:
+        r.raise_for_status()
+    except HTTPError as e:
+        raise RemoteFeedError(e)
     return parse_text(r.text)
 
 
