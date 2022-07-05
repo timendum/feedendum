@@ -2,8 +2,6 @@ from datetime import datetime as dt
 from email.utils import format_datetime, parsedate_to_datetime
 from typing import Optional
 
-from requests import HTTPError
-
 import lxml.etree as ET
 
 from .exceptions import FeedParseError, FeedXMLError, RemoteFeedError
@@ -47,7 +45,7 @@ def parse_url(url, **extra) -> Feed:
     r = requests.get(url)
     try:
         r.raise_for_status()
-    except HTTPError as e:
+    except requests.HTTPError as e:
         raise RemoteFeedError(e)
     return parse_text(r.text)
 

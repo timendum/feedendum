@@ -1,6 +1,6 @@
+import itertools
 from collections import defaultdict
 from typing import Optional
-import itertools
 
 from lxml.etree import CDATA, Element, SubElement
 
