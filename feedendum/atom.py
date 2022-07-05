@@ -129,4 +129,5 @@ def generate(feed):
             elink = ET.SubElement(entry, f"{ns}category")
             elink.set("term", fcategory)
         dict_append_etree(fitem._data, entry)
+    ET.cleanup_namespaces(root)
     return ET.tostring(root, encoding="UTF-8", xml_declaration=True).decode("utf-8")

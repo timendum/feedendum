@@ -114,4 +114,5 @@ def generate(feed):
         for fcategory in fitem.categories:
             add_text_element(item, "category", fcategory)
         dict_append_etree(fitem._data, item)
+    ET.cleanup_namespaces(root)
     return ET.tostring(root, encoding="UTF-8", xml_declaration=True).decode("utf-8")
