@@ -8,6 +8,10 @@ from .rss import generate as to_rss_string
 from .rss import parse_file as from_rss_file
 from .rss import parse_text as from_rss_text
 from .rss import parse_url as from_rss_url
+from .rdf import generate as to_rdf_string
+from .rdf import parse_file as from_rdf_file
+from .rdf import parse_text as from_rdf_text
+from .rdf import parse_url as from_rdf_url
 
 __all__ = [
     "rss",
@@ -16,11 +20,15 @@ __all__ = [
     "from_rss_file",
     "from_rss_url",
     "from_rss_text",
+    "from_rdf_file",
+    "from_rdf_url",
+    "from_rdf_text",
     "from_atom_file",
     "from_atom_url",
     "from_atom_text",
     "to_rss_string",
     "to_atom_string",
+    "to_rdf_string",
     "Feed",
     "FeedItem",
 ]

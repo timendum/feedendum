@@ -6,6 +6,7 @@ A python library to parse and generate RSS or atom feeds.
 This module can:
 
 * parse RSS text and file
+* parse RDF (RSS v1.0) text and file
 * parse Atom text and file
 * read an url if `requests` is installed
 * access standard fields via `feed` class and `feed.item` list
@@ -13,6 +14,7 @@ This module can:
 * create arbitrary feed
 * modify an existing feed
 * generate a RSS text
+* generate a RDF (RSS v1.0) text
 * generate an Atom text
 * preserve all data parsed, even in custom fields, when generating a RSS/Atom text
 
@@ -24,6 +26,11 @@ For RSS:
 
     feed = feedendum.from_rss_file(file_path)
     feed = feedendum.from_rss_text(txt)
+
+For RDF (RSS v1.0): 
+
+    feed = feedendum.from_rdf_file(file_path)
+    feed = feedendum.from_rdf_text(txt)
 
 For Atom:
 
@@ -48,8 +55,10 @@ For RSS:
 
     feedendum.to_rss_string(feed)
 
+For RDF (RSS v1.0):
+
+    feedendum.to_rdf_string(feed)
+
 For Atom:
 
     feedendum.to_atom_string(feed)
-
-

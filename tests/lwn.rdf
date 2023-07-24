@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns="http://purl.org/rss/1.0/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+>
+
+  <channel rdf:about="https://lwn.net/headlines/rss">
+    <title>LWN.net</title>
+    <link>https://lwn.net</link>
+    <description>
+ LWN.net is a comprehensive source of news and opinions from
+        and about the Linux community.  This is the main LWN.net feed,
+        listing all articles which are posted to the site front page.
+
+    </description>
+
+    <syn:updatePeriod>hourly</syn:updatePeriod>
+    <syn:updateFrequency>2</syn:updateFrequency>
+    <items>
+      <rdf:Seq>
+	<rdf:li resource="https://lwn.net/Articles/937631/" />
+	<rdf:li resource="https://lwn.net/Articles/937416/" />
+	<rdf:li resource="https://lwn.net/Articles/937616/" />
+	<rdf:li resource="https://lwn.net/Articles/937528/" />
+	<rdf:li resource="https://lwn.net/Articles/937326/" />
+	<rdf:li resource="https://lwn.net/Articles/937239/" />
+	<rdf:li resource="https://lwn.net/Articles/937481/" />
+	<rdf:li resource="https://lwn.net/Articles/936800/" />
+	<rdf:li resource="https://lwn.net/Articles/937400/" />
+	<rdf:li resource="https://lwn.net/Articles/937247/" />
+	<rdf:li resource="https://lwn.net/Articles/937377/" />
+	<rdf:li resource="https://lwn.net/Articles/936953/" />
+	<rdf:li resource="https://lwn.net/Articles/937369/" />
+	<rdf:li resource="https://lwn.net/Articles/937368/" />
+	<rdf:li resource="https://lwn.net/Articles/937317/" />
+      
+      </rdf:Seq>
+    </items>
+
+  </channel>
+    <item rdf:about="https://lwn.net/Articles/937631/">
+      <title>Going Rogue (Digital Antiquarian)</title>
+      <link>https://lwn.net/Articles/937631/</link>
+      <dc:date>2023-07-07T18:15:29+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      After an initial foray into the ways that open-source software has failed
+to live up to its early hype,
+&lt;a href=&quot;https://www.filfre.net/2023/07/going-rogue/&quot;&gt;this Digital
+Antiquarian article&lt;/a&gt; covers the history of rogue-like games in great
+detail.
+&lt;p&gt;
+&lt;blockquote class=&quot;bq&quot;&gt;
+	This brings us back around to a statement I made at the outset:
+	that roguelikes are the exception that proves the rule of
+	open-source game development — and just possibly of open-source
+	software development in general. The cast of thousands who
+	contribute to them do so in order to make exactly the games that
+	they want to play, which in the abstract is the best of all
+	possible reasons to make a game. The experience they end up with
+	is, unsurprisingly, much like high-wire programming at its most
+	advanced, presenting players with an immense, multi-faceted system
+	to be explored and mastered.
+&lt;/blockquote&gt;
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/937416/">
+      <title>[$] A pair of workqueue improvements</title>
+      <link>https://lwn.net/Articles/937416/</link>
+      <dc:date>2023-07-07T14:52:01+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      Over the years, the kernel has developed a number of deferred-execution
+mechanisms to take care of work that cannot be done immediately.  For many
+(or most) needs, the &lt;a
+href=&quot;https://www.kernel.org/doc/html/latest/core-api/workqueue.html&quot;&gt;workqueue
+subsystem&lt;/a&gt; is the tool that developers reach for first.  Workqueues
+&lt;a href=&quot;https://lwn.net/Articles/355700/&quot;&gt;took their current form&lt;/a&gt; over a dozen years
+ago, but that does not mean that there are not improvements to be made.
+Two sets of patches from Tejun Heo show the pressures being felt by the
+workqueue subsystem and the solutions that are being tried — with varying
+degrees of success.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/937616/">
+      <title>Security updates for Friday</title>
+      <link>https://lwn.net/Articles/937616/</link>
+      <dc:date>2023-07-07T13:56:52+00:00</dc:date>
+      <dc:creator>jake</dc:creator>
+      <description>
+      Security updates have been issued by &lt;b&gt;Debian&lt;/b&gt; (debian-archive-keyring, libusrsctp, nsis, ruby-redcloth, and webkit2gtk), &lt;b&gt;Fedora&lt;/b&gt; (firefox), &lt;b&gt;Mageia&lt;/b&gt; (apache-ivy, cups, curaengine, glances, golang, keepass, libreoffice, minidlna, nodejs, opensc, perl-DBD-SQLite, python-setuptools, python-wheel, skopeo/buildah/podman, systemd, testng, and webkit2), &lt;b&gt;SUSE&lt;/b&gt; (bind), and &lt;b&gt;Ubuntu&lt;/b&gt; (Gerbv, golang-websocket, linux-gke, linux-intel-iotg, and linux-oem-5.17).
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/937528/">
+      <title>Fedora considers &quot;privacy-preserving&quot; telemetry</title>
+      <link>https://lwn.net/Articles/937528/</link>
+      <dc:date>2023-07-06T22:56:50+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      The Fedora project is considering &lt;a
+href=&quot;https://lwn.net/ml/fedora-devel/CAJqbrbeOZrHvYjvMCc=qGZD_VXBs3-qReeirr+F8t01Eq1sYhw@mail.gmail.com/&quot;&gt;a
+Fedora&amp;nbsp;40 change proposal&lt;/a&gt; to add limited, opt-out telemetry to the
+workstation edition.  The proposal is detailed; it is clear that the
+developers involved understand that this will be a hard sell in that
+community.
+&lt;p&gt;
+&lt;blockquote class=&quot;bq&quot;&gt;
+	We believe an open source community can ethically collect limited
+	aggregate data on how its software is used without involving big
+	data companies or building creepy tracking profiles that are not in
+	the best interests of users. Users will have the option to disable
+	data upload before any data is sent for the first time. Our service
+	will be operated by Fedora on Fedora infrastructure, and will not
+	depend on Google Analytics or any other controversial third-party
+	services. And in contrast to proprietary software operating
+	systems, you can redirect the data collection to your own private
+	metrics server instead of Fedora's to see precisely what data is
+	being collected from you, because the server components are open
+	source too.
+&lt;/blockquote&gt;
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/937326/">
+      <title>[$] BPF iterators for filesystems</title>
+      <link>https://lwn.net/Articles/937326/</link>
+      <dc:date>2023-07-06T15:48:29+00:00</dc:date>
+      <dc:creator>jake</dc:creator>
+      <description>
+      In the first of two combined BPF and filesystem sessions at the
+&lt;a href=&quot;https://lwn.net/Articles/lsfmmbpf2023&quot;&gt;2023 Linux Storage, Filesystem,
+Memory-Management and BPF Summit&lt;/a&gt;, Hou Tao introduced his BPF iterators
+for filesystem information.  &lt;a href=&quot;https://lwn.net/Articles/926041/&quot;&gt;Iterators for
+BPF&lt;/a&gt; are a relatively recent addition to the BPF landscape; they help
+BPF programs step through kernel data structures in a loop-like manner, but
+without running afoul of the BPF verifier, which is notoriously hard to
+convince about loops.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/937239/">
+      <title>[$] Large folios for anonymous memory</title>
+      <link>https://lwn.net/Articles/937239/</link>
+      <dc:date>2023-07-06T13:52:37+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      The transition to &lt;a href=&quot;https://lwn.net/Articles/849538/&quot;&gt;folios&lt;/a&gt; has transformed
+the memory-management subsystem in a number of ways, but has also resulted
+in a lot of code churn that has not been welcomed by all developers.  As
+this work proceeds, though, some of the benefits from it are beginning to
+become clear.  One example may well be in the handling of anonymous memory,
+as can be seen in a pair of patch sets from Ryan Roberts.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/937481/">
+      <title>Security updates for Thursday</title>
+      <link>https://lwn.net/Articles/937481/</link>
+      <dc:date>2023-07-06T13:50:27+00:00</dc:date>
+      <dc:creator>jake</dc:creator>
+      <description>
+      Security updates have been issued by &lt;b&gt;Debian&lt;/b&gt; (golang-yaml.v2, kernel, and mediawiki), &lt;b&gt;Fedora&lt;/b&gt; (kernel and picocli), &lt;b&gt;SUSE&lt;/b&gt; (bind and python-sqlparse), and &lt;b&gt;Ubuntu&lt;/b&gt; (cpdb-libs).
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/936800/">
+      <title>[$] LWN.net Weekly Edition for July 6, 2023</title>
+      <link>https://lwn.net/Articles/936800/</link>
+      <dc:date>2023-07-06T01:29:25+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      The LWN.net Weekly Edition for July 6, 2023 is available.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/937400/">
+      <title>Four stable kernel updates</title>
+      <link>https://lwn.net/Articles/937400/</link>
+      <dc:date>2023-07-05T18:24:08+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      The
+&lt;a href=&quot;https://lwn.net/Articles/937401/&quot;&gt;6.4.2&lt;/a&gt;,
+&lt;a href=&quot;https://lwn.net/Articles/937402/&quot;&gt;6.3.12&lt;/a&gt;,
+&lt;a href=&quot;https://lwn.net/Articles/937403/&quot;&gt;6.1.38&lt;/a&gt;, and
+&lt;a href=&quot;https://lwn.net/Articles/937404/&quot;&gt;5.15.120&lt;/a&gt;
+stable kernel updates have all been released; each contains another set of
+important fixes.
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/937247/">
+      <title>[$] Improving i_version</title>
+      <link>https://lwn.net/Articles/937247/</link>
+      <dc:date>2023-07-05T16:09:45+00:00</dc:date>
+      <dc:creator>jake</dc:creator>
+      <description>
+      The &lt;a
+href=&quot;https://elixir.bootlin.com/linux/v6.4.1/source/include/linux/fs.h#L684&quot;&gt;&lt;tt&gt;i_version&lt;/tt&gt;&lt;/a&gt;
+field in &lt;a
+href=&quot;https://elixir.bootlin.com/linux/v6.4.1/source/include/linux/fs.h#L608&quot;&gt;&lt;tt&gt;struct&amp;nbsp;inode&lt;/tt&gt;&lt;/a&gt;
+is meant to track changes to the data or metadata of a file.  There are
+some &lt;a href=&quot;https://lwn.net/Articles/905931/&quot;&gt;problems&lt;/a&gt; with the way that
+&lt;tt&gt;i_version&lt;/tt&gt; is being handled in the kernel, 
+so Jeff Layton led a filesystem session at the
+&lt;a href=&quot;https://lwn.net/Articles/lsfmmbpf2023&quot;&gt;2023 Linux Storage, Filesystem,
+Memory-Management and BPF Summit&lt;/a&gt; to discuss them and what to do
+about them.  For the most part, there are solutions in the works that will
+resolve most of the larger issues.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/937377/">
+      <title>The &quot;StackRot&quot; kernel vulnerability</title>
+      <link>https://lwn.net/Articles/937377/</link>
+      <dc:date>2023-07-05T14:34:55+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      Ruihan Li has &lt;a
+href=&quot;https://lwn.net/ml/oss-security/xhhkp3aknwwlmrmmqmr532yfq3ioqh6jbkrxfqf6ovlj2szsai@f3sjwakyq323/&quot;&gt;disclosed
+a significant vulnerability&lt;/a&gt; introduced into the 6.1 kernel:
+&lt;p&gt;
+&lt;blockquote class=&quot;bq&quot;&gt;
+	A flaw was found in the handling of stack expansion in the Linux
+	kernel 6.1 through 6.4, aka &quot;Stack Rot&quot;. The maple tree,
+	responsible for managing virtual memory areas, can undergo node
+	replacement without properly acquiring the MM write lock, leading
+	to use-after-free issues. An unprivileged local user could use this
+	flaw to compromise the kernel and escalate their privileges.
+&lt;p&gt;
+	As StackRot is a Linux kernel vulnerability found in the memory
+	management subsystem, it affects almost all kernel configurations
+	and requires minimal capabilities to trigger. However, it should be
+	noted that maple nodes are freed using RCU callbacks, delaying the
+	actual memory deallocation until after the RCU grace
+	period. Consequently, exploiting this vulnerability is considered
+	challenging.
+&lt;/blockquote&gt;
+&lt;p&gt;
+The disclosure contains a detailed description of the problem.  Fixes have
+been merged into &lt;a href=&quot;https://git.kernel.org/linus/9471f1f2f502&quot;&gt;the
+mainline&lt;/a&gt; and &lt;a href=&quot;https://lwn.net/Articles/937079/&quot;&gt;the 6.4.1, 6.3.11, and 6.1.37
+stable kernel updates&lt;/a&gt;.
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/936953/">
+      <title>[$] Termux: Linux applications on Android</title>
+      <link>https://lwn.net/Articles/936953/</link>
+      <dc:date>2023-07-05T14:25:14+00:00</dc:date>
+      <dc:creator>jake</dc:creator>
+      <description>
+      &lt;a href=&quot;https://termux.dev/en/&quot;&gt;Termux&lt;/a&gt; is an Android app that
+provides a Linux environment and terminal emulator for such devices. Most
+command-line software can be used quite easily with Termux, 
+and GUI software can be run by installing a few extra apps. It is an excellent
+option for Android users who want to run Linux software occasionally on a
+device more portable than a laptop but do not want to use a dedicated Linux
+phone due to the cost or limitations of such devices.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/937369/">
+      <title>LXD moves into Canonical</title>
+      <link>https://lwn.net/Articles/937369/</link>
+      <dc:date>2023-07-05T13:56:56+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      The LXD container-management system is no longer a part of the &lt;a
+href=&quot;https://linuxcontainers.org/&quot;&gt;linuxcontainers.org&lt;/a&gt; project:
+&lt;p&gt;
+&lt;blockquote class=&quot;bq&quot;&gt;
+	Canonical, the creator and main contributor of the LXD project has
+	decided that after over 8 years as part of the Linux Containers
+	community, the project would now be better served directly under
+	Canonical’s own set of projects.
+&lt;p&gt;
+	While the team behind Linux Containers regrets that decision and
+	will be missing LXD as one of its projects, it does respect
+	Canonical’s decision and is now in the process of moving the
+	project over.
+&lt;/blockquote&gt;
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/937368/">
+      <title>Security updates for Wednesday</title>
+      <link>https://lwn.net/Articles/937368/</link>
+      <dc:date>2023-07-05T13:51:45+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      Security updates have been issued by &lt;b&gt;Fedora&lt;/b&gt; (firefox and python-reportlab), &lt;b&gt;Slackware&lt;/b&gt; (mozilla), &lt;b&gt;SUSE&lt;/b&gt; (dnsdist, grpc, protobuf, python-Deprecated, python-PyGithub, python-aiocontextvars, python-avro, python-bcrypt, python-cryptography, python- cryptography-vectors, python-google-api-core, pyt, kernel, kubernetes1.18, libdwarf, python311, qt6-base, rmt-server, and virtualbox), and &lt;b&gt;Ubuntu&lt;/b&gt; (containerd, firefox, and python-django).
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/937317/">
+      <title>Brockmeier: Red Hat and the Clone Wars III: The dawn of CentOS</title>
+      <link>https://lwn.net/Articles/937317/</link>
+      <dc:date>2023-07-04T19:17:27+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      Joe &quot;Zonker&quot; Brockmeier has been a part of the Linux community for decades;
+he is now using that experience to write a series on &quot;Red Hat and the Clone
+Wars&quot;.  The first two episodes were &lt;a
+href=&quot;https://dissociatedpress.net/2023/06/24/red-hat-and-the-clone-wars/&quot;&gt;Red
+Hat and the Clone Wars&lt;/a&gt; and &lt;a
+href=&quot;https://dissociatedpress.net/2023/06/26/red-hat-and-the-clone-wars-ii-a-history-of-the-early-2000s-linux-landscape/&quot;&gt;A
+history of the early 2000s Linux landscape&lt;/a&gt;; the latest is &lt;a
+href=&quot;https://dissociatedpress.net/2023/07/03/red-hat-and-the-clone-wars-iii-the-dawn-of-centos/&quot;&gt;The
+dawn of CentOS&lt;/a&gt;:
+&lt;p&gt;
+&lt;blockquote class=&quot;bq&quot;&gt;
+	In 2009, the main project admin for CentOS went radio
+	silent. CentOS had been spun up in the wild west days of the
+	Internet, when it seemed totally fine to let one person hold the
+	domain, communications channels, and funds. Oops.
+&lt;p&gt;
+	Folks depending on CentOS suddenly had a Come to Jesus moment. What
+	happens if your production systems depend on a project where the
+	main admin is AWOL and you have no plan for that?
+&lt;/blockquote&gt;
+      
+      </description>
+    </item>
+</rdf:RDF>

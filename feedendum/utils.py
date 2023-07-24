@@ -12,8 +12,9 @@ NS = {
     "itunes": "http://www.itunes.com/dtds/podcast-1.0.dtd",
     "media": "http://search.yahoo.com/mrss/",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfns": "http://purl.org/rss/1.0/",
     "slash": "http://purl.org/rss/1.0/modules/slash/",
-    "thread": "http://purl.org/syndication/thread/1.0",
+    "thread": "http://purl.org/syndication/thread/1.0"
 }
 
 # from https://www.w3.org/TR/xml/#NT-Char
