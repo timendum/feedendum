@@ -7,6 +7,7 @@ from .exceptions import FeedParseError, FeedXMLError, RemoteFeedError
 from .feed import Feed, FeedItem
 from .utils import (
     NS,
+    add_content_element,
     add_text_element,
     dict_append_etree,
     etree_to_dict,
@@ -111,7 +112,7 @@ def generate(feed):
         add_text_element(entry, f"{ns}title", fitem.title)
         add_text_element(entry, f"{ns}link", fitem.url)
         add_text_element(entry, f"{ns}id", fitem.id)
-        add_text_element(entry, f"{ns}description", fitem.content)
+        add_content_element(entry, f"{ns}description", fitem.content)
         add_text_element(entry, f"{dc}date", dt.isoformat(fitem.update))
         add_text_element(entry, f"{dc}format", fitem.content_type)
         for fcategory in fitem.categories:
