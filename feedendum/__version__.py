@@ -1,3 +1,7 @@
 import importlib.metadata
 
-__version__ = importlib.metadata.version("feedendum")
+__version__ = "dev"
+try:
+    importlib.metadata.version("feedendum")
+except importlib.metadata.PackageNotFoundError:
+    pass
