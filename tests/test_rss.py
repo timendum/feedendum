@@ -1,5 +1,6 @@
 import unittest
 from datetime import datetime as dt
+from feedendum.exceptions import FeedParseError, FeedXMLError
 
 import feedendum.rss as rss
 from feedendum.feed import Feed
@@ -114,6 +115,15 @@ class RssTest(unittest.TestCase):
         feed = Feed(title="Bad\u001AChar")
         xml = rss.generate(feed)
         self.assertNotIn("\u001A", xml)
+
+    def test_unparsable(self):
+        with self.assertRaises(FeedXMLError):
+            rss.parse_text('A')
+        with self.assertRaises(FeedParseError):
+            rss.parse_file('tests/martinfowler.atom')
+        with self.assertRaises(FeedParseError):
+            rss.parse_file('tests/lwn.rdf')
+
 
 if __name__ == '__main__':
     unittest.main()

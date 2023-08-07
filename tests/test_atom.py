@@ -2,6 +2,7 @@ import unittest
 from datetime import datetime as dt
 
 import feedendum.atom as atom
+from feedendum.exceptions import FeedParseError, FeedXMLError
 from feedendum.feed import Feed
 
 
@@ -101,6 +102,14 @@ class AtomTest(unittest.TestCase):
         feed = Feed(title="Bad\u0008Char")
         xml = atom.generate(feed)
         self.assertNotIn("\u0008", xml)
+
+    def test_unparsable(self):
+        with self.assertRaises(FeedXMLError):
+            atom.parse_text('A')
+        with self.assertRaises(FeedParseError):
+            atom.parse_file('tests/wikipedia-rss.xml')
+        with self.assertRaises(FeedParseError):
+            atom.parse_file('tests/lwn.rdf')
 
 if __name__ == '__main__':
     unittest.main()
