@@ -1,6 +1,4 @@
-from datetime import datetime as dt
 from email.utils import format_datetime, parsedate_to_datetime
-from typing import Optional
 
 import lxml.etree as ET
 
@@ -20,20 +18,25 @@ try:
 except ModuleNotFoundError:
     requests = None  # type: ignore
 
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from datetime import datetime as dt
+
 
 def parse_text(text: str) -> Feed:
     try:
         tree = ET.fromstring(text.encode("utf-8"))
-    except ET.ParseError:
-        raise FeedXMLError("Not a valid XML document")
+    except ET.ParseError as e :
+        raise FeedXMLError("Not a valid XML document") from e
     return to_feed(tree)
 
 
 def parse_file(file) -> Feed:
     try:
         tree = ET.parse(file)
-    except ET.ParseError:
-        raise FeedXMLError("Not a valid XML document")
+    except ET.ParseError as e:
+        raise FeedXMLError("Not a valid XML document") from e
     return to_feed(tree.getroot())
 
 
@@ -46,11 +49,11 @@ def parse_url(url, **extra) -> Feed:
     try:
         r.raise_for_status()
     except requests.HTTPError as e:
-        raise RemoteFeedError(e)
+        raise RemoteFeedError() from e
     return parse_text(r.text)
 
 
-def parse_rfc2822_datetime(elem: ET.Element, name: str) -> Optional[dt]:
+def parse_rfc2822_datetime(elem: ET.Element, name: str) -> "dt | None":
     text = get_text(elem, name)
     if text:
         try:
@@ -65,7 +68,7 @@ def to_feed(root) -> Feed:
         raise FeedParseError("Root element is not 'rss' but " + root.tag)
     rss_version = root.get("version")
     if rss_version != "2.0":
-        raise FeedParseError("RSS feed version not 2.0 but '{}'".format(rss_version))
+        raise FeedParseError(f"RSS feed version not 2.0 but '{rss_version}'")
     channel = root.find("channel")
     if channel is None:
         raise FeedParseError("Element 'channel' not found")

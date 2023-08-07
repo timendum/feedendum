@@ -1,17 +1,16 @@
 import dataclasses
 import datetime
 from collections import OrderedDict
-from typing import Optional
 
 
 @dataclasses.dataclass(kw_only=True)
 class Feed:
     """A single feed similar to an atom feed or a rss channel"""
 
-    description: Optional[str] = None
-    title: Optional[str] = None
-    url: Optional[str] = None
-    update: Optional[datetime.datetime] = None
+    description: str | None = None
+    title: str | None = None
+    url: str | None = None
+    update: datetime.datetime | None = None
     items: list["FeedItem"] = dataclasses.field(default_factory=list)
     _data: dict = dataclasses.field(default_factory=dict)
 
@@ -25,7 +24,7 @@ class Feed:
         items = OrderedDict([item.url, item] for item in reversed(self.items))
         self.items = list(reversed(items.values()))
 
-    def sort_items(self, key=None) -> None:
+    def sort_items(self, key=None) -> bool:
         """Order items by according to key or by `update`, if every item has an `update` value.
         Returns `True` if sorted, `False` otherwise."""
         if not key:
@@ -50,12 +49,12 @@ class Feed:
 class FeedItem:
     """A feed entry, similar to an atom entry or a rss item"""
 
-    content: Optional[str] = None
-    content_type: Optional[str] = None
-    title: Optional[str] = None
-    url: Optional[str] = None
-    id: Optional[str] = None
-    update: Optional[datetime.datetime] = None
+    content: str | None = None
+    content_type: str | None = None
+    title: str | None = None
+    url: str | None = None
+    id: str | None = None
+    update: datetime.datetime | None = None
     categories: list[str] = dataclasses.field(default_factory=list)
     _data: dict = dataclasses.field(default_factory=dict)
 

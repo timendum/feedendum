@@ -1,6 +1,5 @@
 import itertools
 from collections import defaultdict
-from typing import Optional
 
 from lxml.etree import CDATA, Element, SubElement
 
@@ -14,7 +13,7 @@ NS = {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfns": "http://purl.org/rss/1.0/",
     "slash": "http://purl.org/rss/1.0/modules/slash/",
-    "thread": "http://purl.org/syndication/thread/1.0"
+    "thread": "http://purl.org/syndication/thread/1.0",
 }
 
 # from https://www.w3.org/TR/xml/#NT-Char
@@ -23,7 +22,7 @@ _NON_PRINTABLE_C0 = itertools.chain(range(0x00, 0x09), range(0x0B, 0x0D), range(
 _TRANSLATE_MAP = {c: None for c in _NON_PRINTABLE_C0}
 
 
-def get_text(element: Element, name: str) -> Optional[str]:
+def get_text(element: Element, name: str) -> str | None:
     child = element.find(name, namespaces=NS)
     if child is None:
         return None
@@ -33,7 +32,7 @@ def get_text(element: Element, name: str) -> Optional[str]:
     return child.text.strip()
 
 
-def get_attribute(element: Element, name: str, attribute: str) -> Optional[str]:
+def get_attribute(element: Element, name: str, attribute: str) -> str | None:
     child = element.find(name, namespaces=NS)
     if child is None:
         return None
@@ -43,8 +42,8 @@ def get_attribute(element: Element, name: str, attribute: str) -> Optional[str]:
 
 
 def add_text_element(
-    root: Element, name: str, text: Optional[str], formatter=None
-) -> Optional[Element]:
+    root: Element, name: str, text: str | None, formatter=None
+) -> "Element | None":
     if text and formatter:
         text = formatter(text)
     if text:
@@ -55,7 +54,7 @@ def add_text_element(
     return None
 
 
-def add_content_element(root: Element, name: str, text: Optional[str]) -> Optional[Element]:
+def add_content_element(root: Element, name: str, text: str | None) -> "Element | None":
     if text:
         text = text.translate(_TRANSLATE_MAP)
         elem = SubElement(root, name)
@@ -68,14 +67,14 @@ def add_content_element(root: Element, name: str, text: Optional[str]) -> Option
     return None
 
 
-def set_attribute(element: Element, attribute: str, value: Optional[str]) -> None:
+def set_attribute(element: Element, attribute: str, value: str | None) -> None:
     if element is not None and attribute and value:
         element.attrib[attribute] = value
 
 
-def etree_to_dict(t):
+def etree_to_dict(t: Element):
     # From https://stackoverflow.com/a/10076823
-    d = {t.tag: {} if t.attrib else None}
+    d = {t.tag: {} if t.attrib else None}  # type: dict[str, Any]
     children = list(t)
     if children:
         dd = defaultdict(list)

@@ -1,5 +1,4 @@
 from datetime import datetime as dt
-from typing import Optional
 
 import lxml.etree as ET
 
@@ -23,16 +22,16 @@ except ModuleNotFoundError:
 def parse_text(text: str) -> Feed:
     try:
         tree = ET.fromstring(text.encode("utf-8"))
-    except ET.ParseError:
-        raise FeedXMLError("Not a valid XML document")
+    except ET.ParseError as e:
+        raise FeedXMLError("Not a valid XML document") from e
     return to_feed(tree)
 
 
 def parse_file(file) -> Feed:
     try:
         tree = ET.parse(file)
-    except ET.ParseError:
-        raise FeedXMLError("Not a valid XML document")
+    except ET.ParseError as e:
+        raise FeedXMLError("Not a valid XML document") from e
     return to_feed(tree.getroot())
 
 
@@ -45,11 +44,11 @@ def parse_url(url, **extra) -> Feed:
     try:
         r.raise_for_status()
     except requests.HTTPError as e:
-        raise RemoteFeedError(e)
+        raise RemoteFeedError() from e
     return parse_text(r.text)
 
 
-def parse_iso_datetime(elem: ET.Element, name: str) -> Optional[dt]:
+def parse_iso_datetime(elem: ET.Element, name: str) -> dt | None:
     text = get_text(elem, name)
     if text:
         try:
