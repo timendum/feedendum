@@ -5,14 +5,20 @@ from collections import OrderedDict
 
 @dataclasses.dataclass(kw_only=True)
 class Feed:
-    """A single feed similar to an atom feed or a rss channel"""
+    """A single feed similar to an atom feed or a rss channel."""
 
     description: str | None = None
+    """Description of the feed."""
     title: str | None = None
+    """Title of the feed."""
     url: str | None = None
+    """URL of the feed."""
     update: datetime.datetime | None = None
+    """Last update."""
     items: list["FeedItem"] = dataclasses.field(default_factory=list)
+    """List of items."""
     _data: dict = dataclasses.field(default_factory=dict)
+    """Other attributes not managed."""
 
     def __getattr__(self, name):
         return self._data[name]
@@ -50,13 +56,21 @@ class FeedItem:
     """A feed entry, similar to an atom entry or a rss item"""
 
     content: str | None = None
+    """The content of the item (usually a text or HTML)."""
     content_type: str | None = None
+    """The type of the content."""
     title: str | None = None
+    """The title of the item,"""
     url: str | None = None
+    """The URL of the item,"""
     id: str | None = None
+    """The id of the item,"""
     update: datetime.datetime | None = None
+    """Last update."""
     categories: list[str] = dataclasses.field(default_factory=list)
+    """The categories of the item."""
     _data: dict = dataclasses.field(default_factory=dict)
+    """Other attributes not managed."""
 
     def __getattr__(self, name):
         return self._data[name]

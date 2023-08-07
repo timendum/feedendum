@@ -1,3 +1,4 @@
+"""Module to handle Atom feeds."""
 from datetime import datetime as dt
 
 import lxml.etree as ET
@@ -22,6 +23,7 @@ except ModuleNotFoundError:
 
 
 def parse_text(text: str) -> Feed:
+    """Generate a :class:`.feed.Feed` from an Atom string."""
     try:
         tree = ET.fromstring(text.encode("utf-8"))
     except ET.ParseError as e:
@@ -30,6 +32,7 @@ def parse_text(text: str) -> Feed:
 
 
 def parse_file(file) -> Feed:
+    """Generate a :class:`.feed.Feed` from an Atom file."""
     try:
         tree = ET.parse(file)
     except ET.ParseError as e:
@@ -38,6 +41,9 @@ def parse_file(file) -> Feed:
 
 
 def parse_url(url, **extra) -> Feed:
+    """Utility method to generate a :class:`.feed.Feed` from a Atom URL.
+
+    .. note:: This method is works only if `requests` library is available."""
     if not requests:
         raise ModuleNotFoundError(
             "No module named 'requests' found, please install it to use this feature"
@@ -50,7 +56,7 @@ def parse_url(url, **extra) -> Feed:
     return parse_text(r.text)
 
 
-def parse_iso_datetime(elem: ET.Element, name: str) -> dt | None:
+def __parse_iso_datetime(elem: ET.Element, name: str) -> dt | None:
     text = get_text(elem, name)
     if text:
         try:
@@ -63,12 +69,13 @@ def parse_iso_datetime(elem: ET.Element, name: str) -> dt | None:
 
 
 def to_feed(root) -> Feed:
+    """Generate a :class:`.feed.Feed` from a root XML element of an Atom document."""
     if root.tag != "{http://www.w3.org/2005/Atom}feed":
         raise FeedParseError("Root element is not 'feed'")
     feed = Feed()
     feed.title = get_text(root, "atom:title")
     feed.description = get_text(root, "atom:subtitle")
-    feed.update = parse_iso_datetime(root, "atom:updated")
+    feed.update = __parse_iso_datetime(root, "atom:updated")
     for link in root.findall("atom:link", NS):
         rel = link.get("rel")
         if not rel or rel == "alternate":
@@ -87,7 +94,7 @@ def to_feed(root) -> Feed:
         fitem.id = get_text(item, "atom:id")
         fitem.content_type = get_attribute(item, "atom:content", "type")
         fitem.content = get_text(item, "atom:content")
-        fitem.update = parse_iso_datetime(item, "atom:updated") or parse_iso_datetime(
+        fitem.update = __parse_iso_datetime(item, "atom:updated") or __parse_iso_datetime(
             item, "atom:published"
         )
         for link in item.findall("atom:category", NS):
@@ -101,7 +108,8 @@ def to_feed(root) -> Feed:
     return feed
 
 
-def generate(feed):
+def generate(feed) -> str:
+    """Returns a string Atom rappresentation of a feed."""
     nsmap = {None: NS["atom"]}
     ns = f"{{{NS['atom']}}}"
     root = ET.Element(f"{ns}feed", nsmap=nsmap)

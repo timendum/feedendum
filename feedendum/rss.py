@@ -1,3 +1,4 @@
+"""Module to handle RSS feeds."""
 from email.utils import format_datetime, parsedate_to_datetime
 
 import lxml.etree as ET
@@ -25,6 +26,7 @@ if TYPE_CHECKING:
 
 
 def parse_text(text: str) -> Feed:
+    """Generate a :class:`.feed.Feed` from a RSS string."""
     try:
         tree = ET.fromstring(text.encode("utf-8"))
     except ET.ParseError as e :
@@ -33,6 +35,7 @@ def parse_text(text: str) -> Feed:
 
 
 def parse_file(file) -> Feed:
+    """Generate a :class:`.feed.Feed` from a RSS file."""
     try:
         tree = ET.parse(file)
     except ET.ParseError as e:
@@ -41,6 +44,9 @@ def parse_file(file) -> Feed:
 
 
 def parse_url(url, **extra) -> Feed:
+    """Utility method to generate a :class:`.feed.Feed` from a RSS URL.
+
+    .. note:: This method is works only if `requests` library is available."""
     if not requests:
         raise ModuleNotFoundError(
             "No module named 'requests' found, please install it to use this feature"
@@ -53,7 +59,7 @@ def parse_url(url, **extra) -> Feed:
     return parse_text(r.text)
 
 
-def parse_rfc2822_datetime(elem: ET.Element, name: str) -> "dt | None":
+def __parse_rfc2822_datetime(elem: ET.Element, name: str) -> "dt | None":
     text = get_text(elem, name)
     if text:
         try:
@@ -64,6 +70,7 @@ def parse_rfc2822_datetime(elem: ET.Element, name: str) -> "dt | None":
 
 
 def to_feed(root) -> Feed:
+    """Generate a :class:`.feed.Feed` from a root XML element of an RSS document."""
     if root.tag != "rss":
         raise FeedParseError("Root element is not 'rss' but " + root.tag)
     rss_version = root.get("version")
@@ -76,7 +83,7 @@ def to_feed(root) -> Feed:
     feed.title = get_text(channel, "title")
     feed.description = get_text(channel, "description")
     feed.url = get_text(channel, "link")
-    feed.update = parse_rfc2822_datetime(channel, "pubDate") or parse_rfc2822_datetime(
+    feed.update = __parse_rfc2822_datetime(channel, "pubDate") or __parse_rfc2822_datetime(
         channel, "lastBuildDate"
     )
     for item in channel.findall("item"):
@@ -85,7 +92,7 @@ def to_feed(root) -> Feed:
         fitem.title = get_text(item, "title")
         fitem.id = get_text(item, "guid")
         fitem.content = get_text(item, "description")
-        fitem.update = parse_rfc2822_datetime(item, "pubDate")
+        fitem.update = __parse_rfc2822_datetime(item, "pubDate")
         for category in item.findall("category"):
             if category.text:
                 fitem.categories.append(category.text)
@@ -97,6 +104,7 @@ def to_feed(root) -> Feed:
 
 
 def generate(feed):
+    """Returns a string RSS rappresentation of a feed."""
     root = ET.Element("rss", nsmap=NS)
     root.set("version", "2.0")
     channel = ET.SubElement(root, "channel")

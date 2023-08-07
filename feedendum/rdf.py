@@ -1,3 +1,4 @@
+"""Module to handle RDF (RSS 1.0) feeds."""
 from datetime import datetime as dt
 
 import lxml.etree as ET
@@ -20,6 +21,7 @@ except ModuleNotFoundError:
 
 
 def parse_text(text: str) -> Feed:
+    """Generate a :class:`.feed.Feed` from a RDF string."""
     try:
         tree = ET.fromstring(text.encode("utf-8"))
     except ET.ParseError as e:
@@ -28,6 +30,7 @@ def parse_text(text: str) -> Feed:
 
 
 def parse_file(file) -> Feed:
+    """Generate a :class:`.feed.Feed` from a RDF file."""
     try:
         tree = ET.parse(file)
     except ET.ParseError as e:
@@ -36,6 +39,9 @@ def parse_file(file) -> Feed:
 
 
 def parse_url(url, **extra) -> Feed:
+    """Utility method to generate a :class:`.feed.Feed` from a RDF URL.
+
+    .. note:: This method is works only if `requests` library is available."""
     if not requests:
         raise ModuleNotFoundError(
             "No module named 'requests' found, please install it to use this feature"
@@ -48,7 +54,7 @@ def parse_url(url, **extra) -> Feed:
     return parse_text(r.text)
 
 
-def parse_iso_datetime(elem: ET.Element, name: str) -> dt | None:
+def __parse_iso_datetime(elem: ET.Element, name: str) -> dt | None:
     text = get_text(elem, name)
     if text:
         try:
@@ -61,6 +67,7 @@ def parse_iso_datetime(elem: ET.Element, name: str) -> dt | None:
 
 
 def to_feed(root) -> Feed:
+    """Generate a :class:`.feed.Feed` from a root XML element of an RDF document."""
     if root.tag != "{http://www.w3.org/1999/02/22-rdf-syntax-ns#}RDF":
         raise FeedParseError("Root element is not 'rdf'")
 
@@ -71,7 +78,7 @@ def to_feed(root) -> Feed:
     feed.title = get_text(channel, "rdfns:title")
     feed.description = get_text(channel, "rdfns:description")
     feed.url = get_text(channel, "rdfns:link")
-    feed.update = parse_iso_datetime(channel, "dc:date")
+    feed.update = __parse_iso_datetime(channel, "dc:date")
 
     for item in root.findall("rdfns:item", NS):
         fitem = FeedItem()
@@ -79,7 +86,7 @@ def to_feed(root) -> Feed:
         fitem.url = get_text(item, "rdfns:link")
         fitem.id = fitem.url
         fitem.content = get_text(item, "rdfns:description")
-        fitem.update = parse_iso_datetime(item, "dc:date")
+        fitem.update = __parse_iso_datetime(item, "dc:date")
         fitem.content_type = get_text(item, "dc:format")
         term = get_text(item, "dc:subject")
         if term:
@@ -92,6 +99,7 @@ def to_feed(root) -> Feed:
 
 
 def generate(feed):
+    """Returns a string RDF rappresentation of a feed."""
     nsmap = {None: "http://purl.org/rss/1.0/", "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
              "dc": "http://purl.org/dc/elements/1.1/",
              "syn": "http://purl.org/rss/1.0/modules/syndication/"}
