@@ -18,7 +18,10 @@ class Feed:
     items: list["FeedItem"] = dataclasses.field(default_factory=list)
     """List of items."""
     _data: dict = dataclasses.field(default_factory=dict)
-    """Other attributes not managed."""
+    """Other attributes not managed.
+    
+        :meta public:
+"""
 
     def __getattr__(self, name):
         return self._data[name]
@@ -53,24 +56,26 @@ class Feed:
 
 @dataclasses.dataclass(kw_only=True)
 class FeedItem:
-    """A feed entry, similar to an atom entry or a rss item"""
+    """A feed entry, similar to an atom entry or a rss item."""
 
     content: str | None = None
     """The content of the item (usually a text or HTML)."""
     content_type: str | None = None
     """The type of the content."""
     title: str | None = None
-    """The title of the item,"""
+    """The title of the item."""
     url: str | None = None
-    """The URL of the item,"""
+    """The URL of the item."""
     id: str | None = None
-    """The id of the item,"""
+    """The id of the item."""
     update: datetime.datetime | None = None
     """Last update."""
     categories: list[str] = dataclasses.field(default_factory=list)
     """The categories of the item."""
     _data: dict = dataclasses.field(default_factory=dict)
-    """Other attributes not managed."""
+    """Other attributes not managed.
+
+        :meta public:"""
 
     def __getattr__(self, name):
         return self._data[name]

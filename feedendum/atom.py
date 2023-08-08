@@ -23,7 +23,11 @@ except ModuleNotFoundError:
 
 
 def parse_text(text: str) -> Feed:
-    """Generate a :class:`.feed.Feed` from an Atom string."""
+    """Generate a :class:`.feed.Feed` from an Atom string.
+    
+    :raises FeedXMLError: If string is not a valid xml.
+    :raises FeedParseError: If the xml is not an Atom feed.
+"""
     try:
         tree = ET.fromstring(text.encode("utf-8"))
     except ET.ParseError as e:
@@ -32,7 +36,10 @@ def parse_text(text: str) -> Feed:
 
 
 def parse_file(file) -> Feed:
-    """Generate a :class:`.feed.Feed` from an Atom file."""
+    """Generate a :class:`.feed.Feed` from an Atom file.
+    
+    :raises FeedXMLError: If string is not a valid xml.
+    :raises FeedParseError: If the xml is not an Atom feed."""
     try:
         tree = ET.parse(file)
     except ET.ParseError as e:
@@ -42,8 +49,10 @@ def parse_file(file) -> Feed:
 
 def parse_url(url, **extra) -> Feed:
     """Utility method to generate a :class:`.feed.Feed` from a Atom URL.
-
-    .. note:: This method is works only if `requests` library is available."""
+    
+    :raises ModuleNotFoundError: If `requests` is not available.
+    :raises FeedXMLError: If string is not a valid xml.
+    :raises FeedParseError: If the xml is not an Atom feed."""
     if not requests:
         raise ModuleNotFoundError(
             "No module named 'requests' found, please install it to use this feature"
@@ -69,7 +78,13 @@ def __parse_iso_datetime(elem: ET.Element, name: str) -> dt | None:
 
 
 def to_feed(root) -> Feed:
-    """Generate a :class:`.feed.Feed` from a root XML element of an Atom document."""
+    """Generate a :class:`.feed.Feed` from a root XML element of an Atom document.
+    
+    :raises FeedXMLError: If string is not a valid xml.
+
+    :raises FeedParseError: If the xml is not an Atom feed.
+    
+    :meta private:"""
     if root.tag != "{http://www.w3.org/2005/Atom}feed":
         raise FeedParseError("Root element is not 'feed'")
     feed = Feed()

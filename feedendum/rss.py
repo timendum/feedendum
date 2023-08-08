@@ -26,7 +26,10 @@ if TYPE_CHECKING:
 
 
 def parse_text(text: str) -> Feed:
-    """Generate a :class:`.feed.Feed` from a RSS string."""
+    """Generate a :class:`.feed.Feed` from a RSS string.
+    
+    :raises FeedXMLError: If string is not a valid xml.
+    :raises FeedParseError: If the xml is not an RSS feed."""
     try:
         tree = ET.fromstring(text.encode("utf-8"))
     except ET.ParseError as e :
@@ -35,7 +38,10 @@ def parse_text(text: str) -> Feed:
 
 
 def parse_file(file) -> Feed:
-    """Generate a :class:`.feed.Feed` from a RSS file."""
+    """Generate a :class:`.feed.Feed` from a RSS file.
+    
+    :raises FeedXMLError: If string is not a valid xml.
+    :raises FeedParseError: If the xml is not an RSS feed."""
     try:
         tree = ET.parse(file)
     except ET.ParseError as e:
@@ -45,8 +51,10 @@ def parse_file(file) -> Feed:
 
 def parse_url(url, **extra) -> Feed:
     """Utility method to generate a :class:`.feed.Feed` from a RSS URL.
-
-    .. note:: This method is works only if `requests` library is available."""
+    
+    :raises ModuleNotFoundError: If `requests` is not available.
+    :raises FeedXMLError: If string is not a valid xml.
+    :raises FeedParseError: If the xml is not an RSS feed."""
     if not requests:
         raise ModuleNotFoundError(
             "No module named 'requests' found, please install it to use this feature"
@@ -70,7 +78,12 @@ def __parse_rfc2822_datetime(elem: ET.Element, name: str) -> "dt | None":
 
 
 def to_feed(root) -> Feed:
-    """Generate a :class:`.feed.Feed` from a root XML element of an RSS document."""
+    """Generate a :class:`.feed.Feed` from a root XML element of an RSS document.
+    
+    :raises FeedXMLError: If string is not a valid xml.
+    :raises FeedParseError: If the xml is not an RSS feed.
+    
+    :meta private:"""
     if root.tag != "rss":
         raise FeedParseError("Root element is not 'rss' but " + root.tag)
     rss_version = root.get("version")

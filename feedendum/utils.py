@@ -23,6 +23,10 @@ _TRANSLATE_MAP = {c: None for c in _NON_PRINTABLE_C0}
 
 
 def get_text(element: Element, name: str) -> str | None:
+    """
+    Get the text of the child `name` of the `element`
+
+    :meta private:"""
     child = element.find(name, namespaces=NS)
     if child is None:
         return None
@@ -33,6 +37,10 @@ def get_text(element: Element, name: str) -> str | None:
 
 
 def get_attribute(element: Element, name: str, attribute: str) -> str | None:
+    """
+    Get the text of the attribute `name` of the `element`
+
+    :meta private:"""
     child = element.find(name, namespaces=NS)
     if child is None:
         return None
@@ -44,6 +52,10 @@ def get_attribute(element: Element, name: str, attribute: str) -> str | None:
 def add_text_element(
     root: Element, name: str, text: str | None, formatter=None
 ) -> "Element | None":
+    """
+    Add to `root` a child `name` Text element, with `text` content. Use `formatter` if not None.
+
+    :meta private:"""
     if text and formatter:
         text = formatter(text)
     if text:
@@ -55,6 +67,10 @@ def add_text_element(
 
 
 def add_content_element(root: Element, name: str, text: str | None) -> "Element | None":
+    """
+    Add to `root` a child `name` Text element, with `text` content. Use CDATA if needed.
+
+    :meta private:"""
     if text:
         text = text.translate(_TRANSLATE_MAP)
         elem = SubElement(root, name)
@@ -68,11 +84,19 @@ def add_content_element(root: Element, name: str, text: str | None) -> "Element 
 
 
 def set_attribute(element: Element, attribute: str, value: str | None) -> None:
+    """
+    On `element` set the attribute `attribute` to value `value`.
+
+    :meta private:"""
     if element is not None and attribute and value:
         element.attrib[attribute] = value
 
 
 def etree_to_dict(t: Element):
+    """
+    Transform an Element into a Python dictionary, recursively.
+
+    :meta private:"""
     # From https://stackoverflow.com/a/10076823
     d = {t.tag: {} if t.attrib else None}  # type: dict[str, Any]
     children = list(t)
@@ -95,6 +119,10 @@ def etree_to_dict(t: Element):
 
 
 def dict_append_etree(d, root):
+    """
+    The reverse of `etree_to_dict`.
+
+    :meta private:"""
     if not d:
         pass
     elif isinstance(d, str):
