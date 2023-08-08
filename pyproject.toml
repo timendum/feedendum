@@ -1,6 +1,6 @@
 [project]
 name = "feedendum"
-version = "0.2.0"
+version = "0.3.0"
 dependencies = [
     "lxml"
 ]
@@ -26,5 +26,15 @@ http = ["requests"]
 [project.urls]
 "Homepage" = "https://github.com/timendum/feedendum"
 
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
 [tool.setuptools.packages.find]
 where = ["feedendum"] 
+
+[tool.ruff]
+select = ["E", "F", "W", "I", "N", "UP", "B", "G", "PIE", "TCH", "PLE", "PLW"]
+ignore = ["N812"]  # To allow import lxml.etree as ET
+line-length = 100
+show-source = true
