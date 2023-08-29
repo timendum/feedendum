@@ -1,23 +1,19 @@
 [project]
 name = "feedendum"
-version = "0.3.0"
-dependencies = [
-    "lxml"
-]
-authors = [
-  { name="Timendum", email="timendum@gmail.com" },
-]
+version = "0.3.0.1"
+dependencies = ["lxml"]
+authors = [{ name = "Timendum", email = "timendum@gmail.com" }]
 description = "A Utilities to read and write RSS and Atom feeds."
 readme = "README.md"
-license = { file="LICENSE" }
+license = { file = "LICENSE" }
 requires-python = ">=3.10"
 classifiers = [
-    'License :: OSI Approved :: GNU Affero General Public License v3',
-    'Topic :: Software Development :: Libraries',
-    'Topic :: Text Processing :: Markup :: XML',
-    'Programming Language :: Python',
-    'Programming Language :: Python :: 3',
-    'Programming Language :: Python :: 3.10'
+  'License :: OSI Approved :: GNU Affero General Public License v3',
+  'Topic :: Software Development :: Libraries',
+  'Topic :: Text Processing :: Markup :: XML',
+  'Programming Language :: Python',
+  'Programming Language :: Python :: 3',
+  'Programming Language :: Python :: 3.10',
 ]
 
 [project.optional-dependencies]
@@ -27,14 +23,14 @@ http = ["requests"]
 "Homepage" = "https://github.com/timendum/feedendum"
 
 [build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
-[tool.setuptools.packages.find]
-where = ["feedendum"] 
+[tool.hatch.build.targets.sdist]
+exclude = ["/.vscode"]
 
 [tool.ruff]
 select = ["E", "F", "W", "I", "N", "UP", "B", "G", "PIE", "TCH", "PLE", "PLW"]
-ignore = ["N812"]  # To allow import lxml.etree as ET
+ignore = ["N812"]                                                              # To allow import lxml.etree as ET
 line-length = 100
 show-source = true
