@@ -22,7 +22,7 @@ except ModuleNotFoundError:
 
 def parse_text(text: str) -> Feed:
     """Generate a :class:`.feed.Feed` from a RDF string.v
-    
+
     :raises FeedXMLError: If string is not a valid xml.
     :raises FeedParseError: If the xml is not an RSS feed."""
     try:
@@ -34,7 +34,7 @@ def parse_text(text: str) -> Feed:
 
 def parse_file(file) -> Feed:
     """Generate a :class:`.feed.Feed` from a RDF file.
-    
+
     :raises FeedXMLError: If string is not a valid xml.
     :raises FeedParseError: If the xml is not an RSS feed."""
     try:
@@ -76,10 +76,10 @@ def __parse_iso_datetime(elem: ET.Element, name: str) -> dt | None:
 
 def to_feed(root) -> Feed:
     """Generate a :class:`.feed.Feed` from a root XML element of an RDF document.
-    
+
     :raises FeedXMLError: If string is not a valid xml.
     :raises FeedParseError: If the xml is not an RSS feed.
-    
+
     :meta private:"""
     if root.tag != "{http://www.w3.org/1999/02/22-rdf-syntax-ns#}RDF":
         raise FeedParseError("Root element is not 'rdf'")

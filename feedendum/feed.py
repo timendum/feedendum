@@ -19,7 +19,7 @@ class Feed:
     """List of items."""
     _data: dict = dataclasses.field(default_factory=dict)
     """Other attributes not managed.
-    
+
         :meta public:
 """
 

@@ -18,7 +18,7 @@ NS = {
 
 # from https://www.w3.org/TR/xml/#NT-Char
 # Allowed: #x9 | #xA | #xD | [#x20-...
-_NON_PRINTABLE_C0 = itertools.chain(range(0x00, 0x09), range(0x0B, 0x0D), range(0x0E, 0x20))
+_NON_PRINTABLE_C0 = itertools.chain(range(0x09), range(0x0B, 0x0D), range(0x0E, 0x20))
 _TRANSLATE_MAP = {c: None for c in _NON_PRINTABLE_C0}
 
 
