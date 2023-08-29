@@ -1,8 +1,10 @@
 import unittest
 from datetime import datetime as dt
-from feedendum.exceptions import FeedParseError, FeedXMLError
 
-import feedendum.rdf  as rdf
+import utils
+
+import feedendum.rdf as rdf
+from feedendum.exceptions import FeedParseError, FeedXMLError
 from feedendum.feed import Feed
 
 
@@ -12,12 +14,15 @@ class RdfTest(unittest.TestCase):
         self.assertIsNotNone(feed)
         self.assertEqual(feed.title, "LWN.net")
         self.assertEqual(feed.url, "https://lwn.net")
-        self.assertEqual(feed.description, """LWN.net is a comprehensive source of news and opinions from
+        self.assertEqual(
+            feed.description,
+            """LWN.net is a comprehensive source of news and opinions from
         and about the Linux community.  This is the main LWN.net feed,
-        listing all articles which are posted to the site front page.""")
+        listing all articles which are posted to the site front page.""",
+        )
         self.assertEqual(feed.update, None)  # No update
         self.assertIsInstance(feed._data, dict)
-        self.assertIn('{http://purl.org/rss/1.0/modules/syndication/}updateFrequency', feed._data)
+        self.assertIn("{http://purl.org/rss/1.0/modules/syndication/}updateFrequency", feed._data)
         self.assertIsInstance(feed.items, list)
         self.assertTrue(len(feed.items) > 1)
         self.assertEqual(feed.items[0].title, "Going Rogue (Digital Antiquarian)")
@@ -32,7 +37,12 @@ class RdfTest(unittest.TestCase):
         )
         self.assertIsInstance(feed.items[0].update, dt)
         self.assertIsInstance(feed.items[0]._data, dict)
-        self.assertNotIn('comments', feed.items[0]._data)
+        self.assertNotIn("comments", feed.items[0]._data)
+
+    def test_inout_file(self):
+        feed = rdf.parse_file("tests/lwn.rdf")
+        feed_out = rdf.generate(feed)
+        self.assertTrue(utils.xml_equals("tests/lwn.rdf", feed_out))
 
     def test_parse_string(self):
         feed = rdf.parse_text(
@@ -72,15 +82,18 @@ class RdfTest(unittest.TestCase):
         <description>&lt;a href=&quot;http://theoatmeal.com/blog/wordy_online?no_popup=1&quot;&gt;&lt;img width=&quot;600&quot; src=&quot;https://s3.amazonaws.com/theoatmeal-img/thumbnails/wordy_online_big.png&quot; alt=&quot;I'm thinking of a word. Try to guess what it is.&quot; class=&quot;border0&quot; /&gt;&lt;/a&gt;&lt;p&gt;I coded a daily word-guessing game.&lt;/p&gt;&lt;a href=&quot;http://theoatmeal.com/blog/wordy_online?no_popup=1&quot;&gt;View on my website&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;</description>
     </item>
 </rdf:RDF>
-"""
+"""   # noqa: E501
         )
         self.assertIsNotNone(feed)
         self.assertEqual(feed.title, "The Oatmeal - Comics by Matthew Inman")
         self.assertEqual(feed.url, "http://theoatmeal.com/")
-        self.assertEqual(feed.description, "I make comics about science, cats, social media, and sometimes goats.")
+        self.assertEqual(
+            feed.description,
+            "I make comics about science, cats, social media, and sometimes goats.",
+        )
         self.assertIsInstance(feed.update, dt)
         self.assertIsInstance(feed._data, dict)
-        self.assertIn('{http://purl.org/rss/1.0/}items', feed._data)
+        self.assertIn("{http://purl.org/rss/1.0/}items", feed._data)
         self.assertIsInstance(feed.items, list)
         self.assertTrue(len(feed.items) > 0)
         self.assertEqual(feed.items[0].title, "I'm thinking of a word. Try to guess what it is.")
@@ -104,16 +117,15 @@ class RdfTest(unittest.TestCase):
         # root
         self.assertTrue("<rdf:RDF" in xml)
         # content root
-        self.assertTrue("<channel>" in xml)
+        self.assertTrue("<channel" in xml)
         # feed.url
-        self.assertTrue(
-            "<link>https://lwn.net</link>" in xml
-        )
+        self.assertTrue("<link>https://lwn.net</link>" in xml)
         # feed.description
         self.assertTrue(
             """LWN.net is a comprehensive source of news and opinions from
         and about the Linux community.  This is the main LWN.net feed,
-        listing all articles which are posted to the site front page.""" in xml
+        listing all articles which are posted to the site front page."""
+            in xml
         )
         self.assertTrue("date>2023-07-07" in xml)
         # feed.title
@@ -121,10 +133,7 @@ class RdfTest(unittest.TestCase):
         # feed._data element
         self.assertTrue("<dc:creator>corbet</dc:creator>" in xml)
         # feed.item.url element
-        self.assertTrue(
-            "<link>https://lwn.net/Articles/937631/</link>"
-            in xml
-        )
+        self.assertTrue("<link>https://lwn.net/Articles/937631/</link>" in xml)
 
     def test_unprintable(self):
         feed = Feed(title="Bad\u001AChar")
@@ -133,11 +142,12 @@ class RdfTest(unittest.TestCase):
 
     def test_unparsable(self):
         with self.assertRaises(FeedXMLError):
-            rdf.parse_text('A')
+            rdf.parse_text("A")
         with self.assertRaises(FeedParseError):
-            rdf.parse_file('tests/martinfowler.atom')
+            rdf.parse_file("tests/martinfowler.atom")
         with self.assertRaises(FeedParseError):
-            rdf.parse_file('tests/wikipedia-rss.xml')
+            rdf.parse_file("tests/wikipedia-rss.xml")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

@@ -1,6 +1,8 @@
 import unittest
 from datetime import datetime as dt
 
+import utils
+
 import feedendum.atom as atom
 from feedendum.exceptions import FeedParseError, FeedXMLError
 from feedendum.feed import Feed
@@ -15,7 +17,7 @@ class AtomTest(unittest.TestCase):
         self.assertEqual(feed.description, "Master feed of news and updates from martinfowler.com")
         self.assertIsInstance(feed.update, dt)
         self.assertIsInstance(feed._data, dict)
-        self.assertIn('{http://www.w3.org/2005/Atom}author', feed._data)
+        self.assertIn("{http://www.w3.org/2005/Atom}author", feed._data)
         self.assertIsInstance(feed.items, list)
         self.assertTrue(len(feed.items) > 1)
         self.assertEqual(feed.items[0].title, "Bliki: ExploratoryTesting")
@@ -31,6 +33,11 @@ class AtomTest(unittest.TestCase):
         self.assertNotEqual(feed.items[0].content_type, None)
         self.assertTrue(len(feed.items[0].categories) > 0)
         self.assertEqual(feed.items[0].categories[0], "bliki")
+
+    def test_inout_file(self):
+        feed = atom.parse_file("tests/martinfowler.atom")
+        feed_out = atom.generate(feed)
+        self.assertTrue(utils.xml_equals("tests/martinfowler.atom", feed_out))
 
     def test_parse_string(self):
         feed = atom.parse_text(
@@ -66,7 +73,7 @@ class AtomTest(unittest.TestCase):
         self.assertEqual(feed.items[0].id, "urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a")
         self.assertIsInstance(feed.items[0].update, dt)
         self.assertIsInstance(feed.items[0]._data, dict)
-        self.assertIn('{http://www.w3.org/2005/Atom}extra', feed.items[0]._data)
+        self.assertIn("{http://www.w3.org/2005/Atom}extra", feed.items[0]._data)
 
     def test_generate(self):
         feed = atom.parse_file("tests/martinfowler.atom")
@@ -105,11 +112,12 @@ class AtomTest(unittest.TestCase):
 
     def test_unparsable(self):
         with self.assertRaises(FeedXMLError):
-            atom.parse_text('A')
+            atom.parse_text("A")
         with self.assertRaises(FeedParseError):
-            atom.parse_file('tests/wikipedia-rss.xml')
+            atom.parse_file("tests/wikipedia-rss.xml")
         with self.assertRaises(FeedParseError):
-            atom.parse_file('tests/lwn.rdf')
+            atom.parse_file("tests/lwn.rdf")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

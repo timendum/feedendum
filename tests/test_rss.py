@@ -1,8 +1,10 @@
 import unittest
 from datetime import datetime as dt
-from feedendum.exceptions import FeedParseError, FeedXMLError
+
+import utils
 
 import feedendum.rss as rss
+from feedendum.exceptions import FeedParseError, FeedXMLError
 from feedendum.feed import Feed
 
 
@@ -29,7 +31,12 @@ class RssTest(unittest.TestCase):
         )
         self.assertIsInstance(feed.items[0].update, dt)
         self.assertIsInstance(feed.items[0]._data, dict)
-        self.assertIn('comments', feed.items[0]._data)
+        self.assertIn("comments", feed.items[0]._data)
+
+    def test_inout_file(self):
+        feed = rss.parse_file("tests/wikipedia-rss.xml")
+        feed_out = rss.generate(feed)
+        self.assertTrue(utils.xml_equals("tests/wikipedia-rss.xml", feed_out))
 
     def test_parse_string(self):
         feed = rss.parse_text(
@@ -58,7 +65,7 @@ class RssTest(unittest.TestCase):
       </item>
     </channel>
   </rss>
-"""
+"""  # noqa: E501
         )
         self.assertIsNotNone(feed)
         self.assertEqual(feed.title, "Scripting News")
@@ -66,7 +73,7 @@ class RssTest(unittest.TestCase):
         self.assertEqual(feed.description, None)
         self.assertIsInstance(feed.update, dt)
         self.assertIsInstance(feed._data, dict)
-        self.assertIn('language', feed._data)
+        self.assertIn("language", feed._data)
         self.assertIsInstance(feed.items, list)
         self.assertTrue(len(feed.items) > 0)
         self.assertEqual(feed.items[0].title, None)
@@ -118,12 +125,12 @@ class RssTest(unittest.TestCase):
 
     def test_unparsable(self):
         with self.assertRaises(FeedXMLError):
-            rss.parse_text('A')
+            rss.parse_text("A")
         with self.assertRaises(FeedParseError):
-            rss.parse_file('tests/martinfowler.atom')
+            rss.parse_file("tests/martinfowler.atom")
         with self.assertRaises(FeedParseError):
-            rss.parse_file('tests/lwn.rdf')
+            rss.parse_file("tests/lwn.rdf")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
