@@ -116,6 +116,7 @@ def to_feed(root) -> Feed:
             term = link.get("term")
             if term:
                 fitem.categories.append(term)
+                item.remove(link)
         fitem._data = etree_to_dict(item)["{http://www.w3.org/2005/Atom}entry"] or {}
         feed.items.append(fitem)
         root.remove(item)
@@ -139,7 +140,7 @@ def generate(feed) -> str:
         entry = ET.SubElement(root, f"{ns}entry")
         add_text_element(entry, f"{ns}title", fitem.title)
         add_text_element(entry, f"{ns}id", fitem.id)
-        add_text_element(entry, f"{ns}updated", feed.update, lambda x: dt.isoformat(x))
+        add_text_element(entry, f"{ns}updated", fitem.update, lambda x: dt.isoformat(x))
         if fitem.url:
             elink = ET.SubElement(entry, f"{ns}link")
             elink.set("href", fitem.url)
