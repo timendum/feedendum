@@ -126,12 +126,11 @@ def generate(feed):
     add_text_element(channel, "description", feed.description)
     if feed.update is not None:
         add_text_element(channel, f"{dc}date", dt.isoformat(feed.update))
-    dict_append_etree(feed._data, root)
+    dict_append_etree(feed._data, channel)
     for fitem in feed.items:
         entry = ET.SubElement(root, f"{ns}item")
         add_text_element(entry, f"{ns}title", fitem.title)
         add_text_element(entry, f"{ns}link", fitem.url)
-        add_text_element(entry, f"{ns}id", fitem.id)
         add_content_element(entry, f"{ns}description", fitem.content)
         add_text_element(entry, f"{dc}date", dt.isoformat(fitem.update))
         add_text_element(entry, f"{dc}format", fitem.content_type)
