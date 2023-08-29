@@ -27,19 +27,19 @@ if TYPE_CHECKING:
 
 def parse_text(text: str) -> Feed:
     """Generate a :class:`.feed.Feed` from a RSS string.
-    
+
     :raises FeedXMLError: If string is not a valid xml.
     :raises FeedParseError: If the xml is not an RSS feed."""
     try:
         tree = ET.fromstring(text.encode("utf-8"))
-    except ET.ParseError as e :
+    except ET.ParseError as e:
         raise FeedXMLError("Not a valid XML document") from e
     return to_feed(tree)
 
 
 def parse_file(file) -> Feed:
     """Generate a :class:`.feed.Feed` from a RSS file.
-    
+
     :raises FeedXMLError: If string is not a valid xml.
     :raises FeedParseError: If the xml is not an RSS feed."""
     try:
@@ -51,7 +51,7 @@ def parse_file(file) -> Feed:
 
 def parse_url(url, **extra) -> Feed:
     """Utility method to generate a :class:`.feed.Feed` from a RSS URL.
-    
+
     :raises ModuleNotFoundError: If `requests` is not available.
     :raises FeedXMLError: If string is not a valid xml.
     :raises FeedParseError: If the xml is not an RSS feed."""
@@ -79,10 +79,10 @@ def __parse_rfc2822_datetime(elem: ET.Element, name: str) -> "dt | None":
 
 def to_feed(root) -> Feed:
     """Generate a :class:`.feed.Feed` from a root XML element of an RSS document.
-    
+
     :raises FeedXMLError: If string is not a valid xml.
     :raises FeedParseError: If the xml is not an RSS feed.
-    
+
     :meta private:"""
     if root.tag != "rss":
         raise FeedParseError("Root element is not 'rss' but " + root.tag)
@@ -109,6 +109,7 @@ def to_feed(root) -> Feed:
         for category in item.findall("category"):
             if category.text:
                 fitem.categories.append(category.text)
+                item.remove(category)
         fitem._data = etree_to_dict(item)["item"] or {}
         feed.items.append(fitem)
         channel.remove(item)
