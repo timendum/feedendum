@@ -13,7 +13,7 @@ NS = {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfns": "http://purl.org/rss/1.0/",
     "slash": "http://purl.org/rss/1.0/modules/slash/",
-    "thread": "http://purl.org/syndication/thread/1.0",
+    "thr": "http://purl.org/syndication/thread/1.0",
 }
 
 # from https://www.w3.org/TR/xml/#NT-Char
@@ -133,8 +133,13 @@ def dict_append_etree(d, root):
                 root.text = v
             elif k.startswith("@"):
                 root.set(k[1:], v)
-            elif isinstance(v, list):
-                for e in v:
-                    dict_append_etree(e, SubElement(root, k))
             else:
-                dict_append_etree(v, SubElement(root, k))
+                nsk = k
+                if ":" in k and k.split(":")[0] in NS:
+                    splitted = k.split(":")
+                    nsk = "{" + NS[splitted[0]] + "}" + splitted[1]
+                if isinstance(v, list):
+                    for e in v:
+                        dict_append_etree(e, SubElement(root, nsk))
+                else:
+                    dict_append_etree(v, SubElement(root, nsk))

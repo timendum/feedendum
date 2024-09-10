@@ -119,9 +119,9 @@ class RssTest(unittest.TestCase):
         self.assertTrue('<p><span dir="auto"><span class="autocomment">Current' in xml)
 
     def test_unprintable(self):
-        feed = Feed(title="Bad\u001AChar")
+        feed = Feed(title="Bad\u001aChar")
         xml = rss.generate(feed)
-        self.assertNotIn("\u001A", xml)
+        self.assertNotIn("\u001a", xml)
 
     def test_unparsable(self):
         with self.assertRaises(FeedXMLError):
@@ -130,6 +130,16 @@ class RssTest(unittest.TestCase):
             rss.parse_file("tests/martinfowler.atom")
         with self.assertRaises(FeedParseError):
             rss.parse_file("tests/lwn.rdf")
+
+    def test_generate_ns(self):
+        feed = rss.parse_file("tests/wikipedia-rss.xml")
+        self.assertIsNotNone(feed)
+        feed._data["dc:title"] = "Dublin Core title"
+        feed.items[0]._data["dc:contributor"] = "Dublin Core contributor"
+        xml = rss.generate(feed)
+        self.assertIsInstance(xml, str)
+        self.assertTrue("<dc:title>Dublin Core title</dc:title>" in xml)
+        self.assertTrue("<dc:contributor>Dublin Core contributor</dc:contributor>" in xml)
 
 
 if __name__ == "__main__":

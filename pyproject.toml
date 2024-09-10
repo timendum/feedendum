@@ -1,6 +1,6 @@
 [project]
 name = "feedendum"
-version = "0.3.0.1"
+version = "0.4.0"
 dependencies = ["lxml"]
 authors = [{ name = "Timendum", email = "timendum@gmail.com" }]
 description = "A Utilities to read and write RSS and Atom feeds."
