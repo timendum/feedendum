@@ -1,5 +1,6 @@
 import itertools
 from collections import defaultdict
+from typing import Any
 
 from lxml.etree import CDATA, Element, SubElement
 
@@ -98,7 +99,7 @@ def etree_to_dict(t: Element):
 
     :meta private:"""
     # From https://stackoverflow.com/a/10076823
-    d = {t.tag: {} if t.attrib else None}  # type: dict[str, Any]
+    d: dict[str, Any] = {t.tag: {} if t.attrib else None}
     children = list(t)
     if children:
         dd = defaultdict(list)

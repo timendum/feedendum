@@ -25,9 +25,11 @@ jobs:
         run: uv python install ${{ matrix.python-version }}
       - name: Install the project
         run: uv sync --all-extras --dev
-      - name: Run tests
-        run: uv run pytest tests
       - name: Lint with ruff
-        run: uv tool run ruff check .
+        run: uvx ruff check .
+      - name: Format with ruff
+        run: uvx ruff format --check .
       - name: Test with unittest
         run: uv run python -m unittest discover -s tests
+      - name: Lint with mypy
+        run: uvx mypy feedendum

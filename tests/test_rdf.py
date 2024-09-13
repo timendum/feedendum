@@ -82,7 +82,7 @@ class RdfTest(unittest.TestCase):
         <description>&lt;a href=&quot;http://theoatmeal.com/blog/wordy_online?no_popup=1&quot;&gt;&lt;img width=&quot;600&quot; src=&quot;https://s3.amazonaws.com/theoatmeal-img/thumbnails/wordy_online_big.png&quot; alt=&quot;I'm thinking of a word. Try to guess what it is.&quot; class=&quot;border0&quot; /&gt;&lt;/a&gt;&lt;p&gt;I coded a daily word-guessing game.&lt;/p&gt;&lt;a href=&quot;http://theoatmeal.com/blog/wordy_online?no_popup=1&quot;&gt;View on my website&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;</description>
     </item>
 </rdf:RDF>
-"""   # noqa: E501
+"""  # noqa: E501
         )
         self.assertIsNotNone(feed)
         self.assertEqual(feed.title, "The Oatmeal - Comics by Matthew Inman")
@@ -136,9 +136,9 @@ class RdfTest(unittest.TestCase):
         self.assertTrue("<link>https://lwn.net/Articles/937631/</link>" in xml)
 
     def test_unprintable(self):
-        feed = Feed(title="Bad\u001AChar")
+        feed = Feed(title="Bad\u001aChar")
         xml = rdf.generate(feed)
-        self.assertNotIn("\u001A", xml)
+        self.assertNotIn("\u001a", xml)
 
     def test_unparsable(self):
         with self.assertRaises(FeedXMLError):

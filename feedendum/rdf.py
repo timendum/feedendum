@@ -1,4 +1,5 @@
 """Module to handle RDF (RSS 1.0) feeds."""
+
 from datetime import datetime as dt
 
 import lxml.etree as ET
@@ -107,15 +108,18 @@ def to_feed(root) -> Feed:
         fitem._data = etree_to_dict(item)["{http://purl.org/rss/1.0/}item"] or {}
         feed.items.append(fitem)
         root.remove(item)
-    feed._data = etree_to_dict(channel)['{http://purl.org/rss/1.0/}channel'] or {}
+    feed._data = etree_to_dict(channel)["{http://purl.org/rss/1.0/}channel"] or {}
     return feed
 
 
 def generate(feed):
     """Returns a string RDF rappresentation of a feed."""
-    nsmap = {None: "http://purl.org/rss/1.0/", "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-             "dc": "http://purl.org/dc/elements/1.1/",
-             "syn": "http://purl.org/rss/1.0/modules/syndication/"}
+    nsmap = {
+        None: "http://purl.org/rss/1.0/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "syn": "http://purl.org/rss/1.0/modules/syndication/",
+    }
     rdf = f"{{{NS['rdf']}}}"
     ns = f"{{{NS['rdfns']}}}"
     dc = f"{{{NS['dc']}}}"

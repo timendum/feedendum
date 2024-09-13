@@ -1,4 +1,5 @@
 """Module to handle RSS feeds."""
+
 from email.utils import format_datetime, parsedate_to_datetime
 
 import lxml.etree as ET

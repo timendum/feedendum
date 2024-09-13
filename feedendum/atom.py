@@ -1,4 +1,5 @@
 """Module to handle Atom feeds."""
+
 from datetime import datetime as dt
 
 import lxml.etree as ET
@@ -27,7 +28,7 @@ def parse_text(text: str) -> Feed:
 
     :raises FeedXMLError: If string is not a valid xml.
     :raises FeedParseError: If the xml is not an Atom feed.
-"""
+    """
     try:
         tree = ET.fromstring(text.encode("utf-8"))
     except ET.ParseError as e:

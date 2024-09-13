@@ -57,6 +57,7 @@ def _iso_formatting_workaround(e1: ET.Element, e2: ET.Element) -> bool:
         == e2.text.strip().replace(" GMT", "").replace(" +0000", "")
     )
 
+
 def _rss_guid_workaround(e1: ET.Element, e2: ET.Element) -> bool:
     # We don't write guid.isPermalink in RSS
     return e1.tag == "guid" and len(e1.attrib) == 1 and "isPermaLink" in e1.attrib

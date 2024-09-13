@@ -34,3 +34,6 @@ lint.select = ["E", "F", "W", "I", "N", "UP", "B", "G", "PIE", "TCH", "PLE", "PL
 lint.ignore = ["N812"]                                                              # To allow import lxml.etree as ET
 line-length = 100
 output-format = "full"
+
+[tool.mypy]
+disable_error_code = "import-untyped"
