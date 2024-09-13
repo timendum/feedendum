@@ -59,3 +59,32 @@ For RDF (RSS v1.0):
 For Atom:
 
     feedendum.to_atom_string(feed)
+
+
+## Development
+
+This package is developed with `uv`.
+
+### Setup
+
+Just run:
+    
+    uv sync
+
+### Tests
+
+Done via unittest
+
+    uv run python -m unittest discover -s tests
+
+### Build
+
+With build and hatchling
+
+    uvx --from build  pyproject-build --installer uv
+
+### Publish
+
+To publish to PyPi
+
+    uvx twine upload dist/*
